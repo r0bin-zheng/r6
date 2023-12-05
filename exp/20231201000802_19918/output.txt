@@ -1,0 +1,3245 @@
+********************************************************************************
+ID: 20231201000802_19918
+Number of objects: 3
+Number of variables: 5
+Algorithm choice: 0
+Maximum number of function evaluations: 250
+Problem name: dtlz7
+********************************************************************************
+Scalar rep in cluster 0 is updated
+Scalar rep in cluster 0 is updated
+Initiating Pareto-Net:
+num of lebal 0:  2258
+num of lebal 1:  302
+num of lebal 2:  302
+Epoch 1: 0.6043115968505541
+Epoch 2: 0.34271684073739583
+Epoch 3: 0.24257666071256
+Epoch 4: 0.19428078167968327
+Epoch 5: 0.15570215384165445
+Epoch 6: 0.14500986960613066
+Epoch 7: 0.1203314275170366
+Epoch 8: 0.11879667449328635
+Epoch 9: 0.10064545706328419
+Epoch 10: 0.09757951793985234
+Epoch 11: 0.08447903391594688
+Epoch 12: 0.08334044886546002
+Epoch 13: 0.0723013291756312
+Epoch 14: 0.07647359001760681
+Epoch 15: 0.07364373142934508
+Epoch 16: 0.06672150266822427
+Epoch 17: 0.056209709547046155
+Epoch 18: 0.053095511636800236
+Epoch 19: 0.04964223524245123
+Epoch 20: 0.04500664991533591
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  1431
+num of lebal 2:  1431
+Eval:  54
+Pareto rep ind:  (0.919358532782286, 0.20005281098686842, 8.550246578785904)
+dom_label = 1:  0
+len of ps_offs:  0
+len of s_offs:  0
+len of p_offs:  0
+No theta or Pareto dominates
+Eval:  54
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9487179487179487 0.9333333333333333 0.9333333333333333
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  1485
+num of lebal 2:  1485
+Scalar (theta) representative solutions: 
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+********************************************************************************
+Eval:  55
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  1540
+num of lebal 2:  1540
+Scalar (theta) representative solutions: 
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+********************************************************************************
+Eval:  56
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9148936170212766 0.8888888888888888 0.8888888888888888
+num of lebal 0:  2518
+num of lebal 1:  337
+num of lebal 2:  337
+Epoch 1: 0.06553243286209182
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  1596
+num of lebal 2:  1596
+Scalar (theta) representative solutions: 
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+********************************************************************************
+Eval:  57
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9574468085106383 0.9 0.9
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  1653
+num of lebal 2:  1653
+Scalar (theta) representative solutions: 
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+********************************************************************************
+Eval:  58
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9787234042553191 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  1711
+num of lebal 2:  1711
+Scalar (theta) representative solutions: 
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+********************************************************************************
+Eval:  59
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9795918367346939 0.9 0.9
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  1770
+num of lebal 2:  1770
+Scalar (theta) representative solutions: 
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+********************************************************************************
+Eval:  60
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9615384615384616 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  1830
+num of lebal 2:  1830
+Scalar (theta) representative solutions: 
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+********************************************************************************
+Eval:  61
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9473684210526315 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  1891
+num of lebal 2:  1891
+Scalar (theta) representative solutions: 
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+********************************************************************************
+Eval:  62
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  1953
+num of lebal 2:  1953
+Scalar (theta) representative solutions: 
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+********************************************************************************
+Eval:  63
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9285714285714286 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  2016
+num of lebal 2:  2016
+Scalar (theta) representative solutions: 
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+********************************************************************************
+Eval:  64
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9565217391304348 0.9444444444444444 0.9444444444444444
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  2080
+num of lebal 2:  2080
+Scalar (theta) representative solutions: 
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+********************************************************************************
+Eval:  65
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9333333333333333 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  2145
+num of lebal 2:  2145
+Scalar (theta) representative solutions: 
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+********************************************************************************
+Eval:  66
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9206349206349206 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  2211
+num of lebal 2:  2211
+Scalar (theta) representative solutions: 
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+********************************************************************************
+Eval:  67
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9375 0.8947368421052632 0.8947368421052632
+num of lebal 0:  3652
+num of lebal 1:  452
+num of lebal 2:  452
+Epoch 1: 0.07022978640421965
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  2278
+num of lebal 2:  2278
+Scalar (theta) representative solutions: 
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+********************************************************************************
+Eval:  68
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8269230769230769 1.0 1.0
+num of lebal 0:  3756
+num of lebal 1:  468
+num of lebal 2:  468
+Epoch 1: 0.06557528815409612
+Epoch 2: 0.059510970185669206
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  2346
+num of lebal 2:  2346
+Scalar (theta) representative solutions: 
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+********************************************************************************
+Eval:  69
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9649122807017544 0.9166666666666666 0.9166666666666666
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  2415
+num of lebal 2:  2415
+Scalar (theta) representative solutions: 
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+********************************************************************************
+Eval:  70
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9833333333333333 0.9 0.9
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  2485
+num of lebal 2:  2485
+Scalar (theta) representative solutions: 
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+********************************************************************************
+Eval:  71
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9074074074074074 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  2556
+num of lebal 2:  2556
+Scalar (theta) representative solutions: 
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+********************************************************************************
+Eval:  72
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9848484848484849 0.8333333333333334 0.8333333333333334
+num of lebal 0:  4230
+num of lebal 1:  513
+num of lebal 2:  513
+Epoch 1: 0.05758205270747457
+Epoch 2: 0.05598507409308557
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  2628
+num of lebal 2:  2628
+Scalar (theta) representative solutions: 
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+********************************************************************************
+Eval:  73
+Pareto rep ind:  (0.919358532782286, 0.20005281098686842, 8.550246578785904)
+dom_label = 1:  0
+len of ps_offs:  0
+len of s_offs:  0
+len of p_offs:  0
+No theta or Pareto dominates
+Eval:  73
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9444444444444444 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  2701
+num of lebal 2:  2701
+Scalar (theta) representative solutions: 
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+********************************************************************************
+Eval:  74
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9705882352941176 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  2775
+num of lebal 2:  2775
+Scalar (theta) representative solutions: 
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+********************************************************************************
+Eval:  75
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9838709677419355 0.9230769230769231 0.9230769230769231
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  2850
+num of lebal 2:  2850
+Scalar (theta) representative solutions: 
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+********************************************************************************
+Eval:  76
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 0.6666666666666666 0.6666666666666666
+num of lebal 0:  4780
+num of lebal 1:  536
+num of lebal 2:  536
+Epoch 1: 0.0622636762770819
+Epoch 2: 0.05708406219364505
+Epoch 3: 0.051582312535671415
+Epoch 4: 0.043396430815120936
+Epoch 5: 0.039424315371573364
+Epoch 6: 0.05572746886411819
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  2926
+num of lebal 2:  2926
+Scalar (theta) representative solutions: 
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+********************************************************************************
+Eval:  77
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9672131147540983 0.75 0.75
+num of lebal 0:  4902
+num of lebal 1:  552
+num of lebal 2:  552
+Epoch 1: 0.0600204844120023
+Epoch 2: 0.04716456626749974
+Epoch 3: 0.043910596783036375
+Epoch 4: 0.03438487986800573
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  3003
+num of lebal 2:  3003
+Scalar (theta) representative solutions: 
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.919358532782286, 0.20005281098686842, 8.550246578785904)
+********************************************************************************
+Eval:  78
+No Pareto rep ind
+Scalar rep in cluster 0 is updated
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9824561403508771 0.9047619047619048 0.9047619047619048
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  3081
+num of lebal 2:  3081
+Scalar (theta) representative solutions: 
+(0.4991533611984009, 0.22753824160976366, 10.466155647555144)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.4991533611984009, 0.22753824160976366, 10.466155647555144)
+********************************************************************************
+Eval:  79
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  3160
+num of lebal 2:  3160
+Scalar (theta) representative solutions: 
+(0.4991533611984009, 0.22753824160976366, 10.466155647555144)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.4991533611984009, 0.22753824160976366, 10.466155647555144)
+********************************************************************************
+Eval:  80
+No Pareto rep ind
+Scalar rep in cluster 0 is updated
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 0.9642857142857143 0.9642857142857143
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  3240
+num of lebal 2:  3240
+Scalar (theta) representative solutions: 
+(0.5033853125272764, 0.13653348227965367, 10.416941572348513)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.5033853125272764, 0.13653348227965367, 10.416941572348513)
+********************************************************************************
+Eval:  81
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9863013698630136 0.8 0.8
+num of lebal 0:  5028
+num of lebal 1:  567
+num of lebal 2:  567
+Epoch 1: 0.05924175825851265
+Epoch 2: 0.04358243458579208
+Epoch 3: 0.046457509270150195
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  3321
+num of lebal 2:  3321
+Scalar (theta) representative solutions: 
+(0.5033853125272764, 0.13653348227965367, 10.416941572348513)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.5033853125272764, 0.13653348227965367, 10.416941572348513)
+********************************************************************************
+Eval:  82
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  3403
+num of lebal 2:  3403
+Scalar (theta) representative solutions: 
+(0.5033853125272764, 0.13653348227965367, 10.416941572348513)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.5033853125272764, 0.13653348227965367, 10.416941572348513)
+********************************************************************************
+Eval:  83
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  3486
+num of lebal 2:  3486
+Scalar (theta) representative solutions: 
+(0.5033853125272764, 0.13653348227965367, 10.416941572348513)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.5033853125272764, 0.13653348227965367, 10.416941572348513)
+********************************************************************************
+Eval:  84
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9558823529411765 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  3570
+num of lebal 2:  3570
+Scalar (theta) representative solutions: 
+(0.5033853125272764, 0.13653348227965367, 10.416941572348513)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.5033853125272764, 0.13653348227965367, 10.416941572348513)
+********************************************************************************
+Eval:  85
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.953125 0.8571428571428571 0.8571428571428571
+num of lebal 0:  5130
+num of lebal 1:  516
+num of lebal 2:  516
+Epoch 1: 0.051037137696116563
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  3655
+num of lebal 2:  3655
+Scalar (theta) representative solutions: 
+(0.5033853125272764, 0.13653348227965367, 10.416941572348513)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.5033853125272764, 0.13653348227965367, 10.416941572348513)
+********************************************************************************
+Eval:  86
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9830508474576272 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  3741
+num of lebal 2:  3741
+Scalar (theta) representative solutions: 
+(0.5033853125272764, 0.13653348227965367, 10.416941572348513)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.5033853125272764, 0.13653348227965367, 10.416941572348513)
+********************************************************************************
+Eval:  87
+No Pareto rep ind
+Scalar rep in cluster 0 is updated
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9827586206896551 0.95 0.95
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  3828
+num of lebal 2:  3828
+Scalar (theta) representative solutions: 
+(0.6609061839113617, 0.1444100477605214, 8.995333653663952)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.6609061839113617, 0.1444100477605214, 8.995333653663952)
+********************************************************************************
+Eval:  88
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9322033898305084 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  3916
+num of lebal 2:  3916
+Scalar (theta) representative solutions: 
+(0.6609061839113617, 0.1444100477605214, 8.995333653663952)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.6609061839113617, 0.1444100477605214, 8.995333653663952)
+********************************************************************************
+Eval:  89
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8805970149253731 1.0 1.0
+num of lebal 0:  5122
+num of lebal 1:  520
+num of lebal 2:  520
+Epoch 1: 0.06218881500460246
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  4005
+num of lebal 2:  4005
+Scalar (theta) representative solutions: 
+(0.6609061839113617, 0.1444100477605214, 8.995333653663952)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.6609061839113617, 0.1444100477605214, 8.995333653663952)
+********************************************************************************
+Eval:  90
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9692307692307692 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  4095
+num of lebal 2:  4095
+Scalar (theta) representative solutions: 
+(0.6609061839113617, 0.1444100477605214, 8.995333653663952)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.6609061839113617, 0.1444100477605214, 8.995333653663952)
+********************************************************************************
+Eval:  91
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.953125 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  4186
+num of lebal 2:  4186
+Scalar (theta) representative solutions: 
+(0.6609061839113617, 0.1444100477605214, 8.995333653663952)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.6609061839113617, 0.1444100477605214, 8.995333653663952)
+********************************************************************************
+Eval:  92
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9538461538461539 0.8461538461538461 0.8461538461538461
+num of lebal 0:  5116
+num of lebal 1:  523
+num of lebal 2:  523
+Epoch 1: 0.07132835180795428
+Epoch 2: 0.057248330738551075
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  4278
+num of lebal 2:  4278
+Scalar (theta) representative solutions: 
+(0.6609061839113617, 0.1444100477605214, 8.995333653663952)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.6609061839113617, 0.1444100477605214, 8.995333653663952)
+********************************************************************************
+Eval:  93
+Pareto rep ind:  (0.6609061839113617, 0.1444100477605214, 8.995333653663952)
+dom_label = 1:  275
+len of ps_offs:  0
+len of s_offs:  0
+len of p_offs:  275
+Pareto dominates
+select best
+Scalar rep in cluster 0 is updated
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.7045454545454546 1.0 1.0
+num of lebal 0:  5074
+num of lebal 1:  544
+num of lebal 2:  544
+Epoch 1: 0.060038963271020866
+Epoch 2: 0.05256592115022618
+Epoch 3: 0.04518255561858915
+Epoch 4: 0.04575055146558509
+Epoch 5: 0.04795111359249067
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  4371
+num of lebal 2:  4371
+Scalar (theta) representative solutions: 
+(0.5042640646818658, 0.13669154776951395, 7.87741507802136)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.5042640646818658, 0.13669154776951395, 7.87741507802136)
+********************************************************************************
+Eval:  94
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  4465
+num of lebal 2:  4465
+Scalar (theta) representative solutions: 
+(0.5042640646818658, 0.13669154776951395, 7.87741507802136)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.5042640646818658, 0.13669154776951395, 7.87741507802136)
+********************************************************************************
+Eval:  95
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9666666666666667 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  4560
+num of lebal 2:  4560
+Scalar (theta) representative solutions: 
+(0.5042640646818658, 0.13669154776951395, 7.87741507802136)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.5042640646818658, 0.13669154776951395, 7.87741507802136)
+********************************************************************************
+Eval:  96
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8970588235294118 1.0 1.0
+num of lebal 0:  5172
+num of lebal 1:  495
+num of lebal 2:  495
+Epoch 1: 0.05231805354590652
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  4656
+num of lebal 2:  4656
+Scalar (theta) representative solutions: 
+(0.5042640646818658, 0.13669154776951395, 7.87741507802136)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.5042640646818658, 0.13669154776951395, 7.87741507802136)
+********************************************************************************
+Eval:  97
+No Pareto rep ind
+Scalar rep in cluster 0 is updated
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9230769230769231 0.9743589743589743 0.9743589743589743
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  4753
+num of lebal 2:  4753
+Scalar (theta) representative solutions: 
+(0.4991914856445935, 0.13669154776951395, 7.862157801659624)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.4991914856445935, 0.13669154776951395, 7.862157801659624)
+********************************************************************************
+Eval:  98
+No Pareto rep ind
+Scalar rep in cluster 0 is updated
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9411764705882353 0.9318181818181818 0.9318181818181818
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  4851
+num of lebal 2:  4851
+Scalar (theta) representative solutions: 
+(0.38606291178157526, 0.13669154776951395, 8.074681918250747)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.38606291178157526, 0.13669154776951395, 8.074681918250747)
+********************************************************************************
+Eval:  99
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  4950
+num of lebal 2:  4950
+Scalar (theta) representative solutions: 
+(0.38606291178157526, 0.13669154776951395, 8.074681918250747)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.38606291178157526, 0.13669154776951395, 8.074681918250747)
+********************************************************************************
+Eval:  100
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9137931034482759 0.85 0.85
+num of lebal 0:  5126
+num of lebal 1:  518
+num of lebal 2:  518
+Epoch 1: 0.07772163454591902
+Epoch 2: 0.06434852521250704
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  5050
+num of lebal 2:  5050
+Scalar (theta) representative solutions: 
+(0.38606291178157526, 0.13669154776951395, 8.074681918250747)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.38606291178157526, 0.13669154776951395, 8.074681918250747)
+********************************************************************************
+Eval:  101
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 0.6666666666666666 0.6666666666666666
+num of lebal 0:  5144
+num of lebal 1:  509
+num of lebal 2:  509
+Epoch 1: 0.07511499496339699
+Epoch 2: 0.06719277813379808
+Epoch 3: 0.06846649288573818
+Epoch 4: 0.0541027109373911
+Epoch 5: 0.06158918700946393
+Epoch 6: 0.057558645567268016
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  5151
+num of lebal 2:  5151
+Scalar (theta) representative solutions: 
+(0.38606291178157526, 0.13669154776951395, 8.074681918250747)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.38606291178157526, 0.13669154776951395, 8.074681918250747)
+********************************************************************************
+Eval:  102
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8367346938775511 1.0 1.0
+num of lebal 0:  5096
+num of lebal 1:  533
+num of lebal 2:  533
+Epoch 1: 0.0626255207226993
+Epoch 2: 0.061510359320109176
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  5253
+num of lebal 2:  5253
+Scalar (theta) representative solutions: 
+(0.38606291178157526, 0.13669154776951395, 8.074681918250747)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.38606291178157526, 0.13669154776951395, 8.074681918250747)
+********************************************************************************
+Eval:  103
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8333333333333334 1.0 1.0
+num of lebal 0:  5092
+num of lebal 1:  535
+num of lebal 2:  535
+Epoch 1: 0.058903194481984666
+Epoch 2: 0.06527926738692419
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  5356
+num of lebal 2:  5356
+Scalar (theta) representative solutions: 
+(0.38606291178157526, 0.13669154776951395, 8.074681918250747)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.38606291178157526, 0.13669154776951395, 8.074681918250747)
+********************************************************************************
+Eval:  104
+Pareto rep ind:  (0.38606291178157526, 0.13669154776951395, 8.074681918250747)
+dom_label = 1:  115
+len of ps_offs:  0
+len of s_offs:  0
+len of p_offs:  115
+Pareto dominates
+select best
+Scalar rep in cluster 0 is updated
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8695652173913043 0.9454545454545454 0.9454545454545454
+num of lebal 0:  4988
+num of lebal 1:  587
+num of lebal 2:  587
+Epoch 1: 0.06993064971521878
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  5460
+num of lebal 2:  5460
+Scalar (theta) representative solutions: 
+(0.318952916535709, 0.10398042149386752, 7.826706255318983)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.318952916535709, 0.10398042149386752, 7.826706255318983)
+********************************************************************************
+Eval:  105
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.98 0.8928571428571429 0.8928571428571429
+num of lebal 0:  5022
+num of lebal 1:  570
+num of lebal 2:  570
+Epoch 1: 0.06739592887618015
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  5565
+num of lebal 2:  5565
+Scalar (theta) representative solutions: 
+(0.318952916535709, 0.10398042149386752, 7.826706255318983)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.318952916535709, 0.10398042149386752, 7.826706255318983)
+********************************************************************************
+Eval:  106
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.7758620689655172 1.0 1.0
+num of lebal 0:  4994
+num of lebal 1:  584
+num of lebal 2:  584
+Epoch 1: 0.06224598350224129
+Epoch 2: 0.060676679811368026
+Epoch 3: 0.06287549350816646
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  5671
+num of lebal 2:  5671
+Scalar (theta) representative solutions: 
+(0.318952916535709, 0.10398042149386752, 7.826706255318983)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.318952916535709, 0.10398042149386752, 7.826706255318983)
+********************************************************************************
+Eval:  107
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9863013698630136 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  5778
+num of lebal 2:  5778
+Scalar (theta) representative solutions: 
+(0.318952916535709, 0.10398042149386752, 7.826706255318983)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.318952916535709, 0.10398042149386752, 7.826706255318983)
+********************************************************************************
+Eval:  108
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.7777777777777778 1.0 1.0
+num of lebal 0:  4938
+num of lebal 1:  612
+num of lebal 2:  612
+Epoch 1: 0.06699874250799143
+Epoch 2: 0.061245736448272796
+Epoch 3: 0.055342151063275426
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  5886
+num of lebal 2:  5886
+Scalar (theta) representative solutions: 
+(0.318952916535709, 0.10398042149386752, 7.826706255318983)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.318952916535709, 0.10398042149386752, 7.826706255318983)
+********************************************************************************
+Eval:  109
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.953125 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  5995
+num of lebal 2:  5995
+Scalar (theta) representative solutions: 
+(0.318952916535709, 0.10398042149386752, 7.826706255318983)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.318952916535709, 0.10398042149386752, 7.826706255318983)
+********************************************************************************
+Eval:  110
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8269230769230769 1.0 1.0
+num of lebal 0:  4952
+num of lebal 1:  605
+num of lebal 2:  605
+Epoch 1: 0.0646898077666359
+Epoch 2: 0.06711227140978095
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  6105
+num of lebal 2:  6105
+Scalar (theta) representative solutions: 
+(0.318952916535709, 0.10398042149386752, 7.826706255318983)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.318952916535709, 0.10398042149386752, 7.826706255318983)
+********************************************************************************
+Eval:  111
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.967741935483871 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  6216
+num of lebal 2:  6216
+Scalar (theta) representative solutions: 
+(0.318952916535709, 0.10398042149386752, 7.826706255318983)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.318952916535709, 0.10398042149386752, 7.826706255318983)
+********************************************************************************
+Eval:  112
+Pareto rep ind:  (0.318952916535709, 0.10398042149386752, 7.826706255318983)
+dom_label = 1:  4
+len of ps_offs:  0
+len of s_offs:  0
+len of p_offs:  4
+Pareto dominates
+select best
+Scalar rep in cluster 0 is updated
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9473684210526315 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  6328
+num of lebal 2:  6328
+Scalar (theta) representative solutions: 
+(0.2646636315172068, 0.10234797122038067, 7.768754758855946)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.2646636315172068, 0.10234797122038067, 7.768754758855946)
+********************************************************************************
+Eval:  113
+No Pareto rep ind
+Scalar rep in cluster 0 is updated
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9473684210526315 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  6441
+num of lebal 2:  6441
+Scalar (theta) representative solutions: 
+(0.2646636315172068, 0.10280746130831211, 7.763216779967863)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.2646636315172068, 0.10280746130831211, 7.763216779967863)
+********************************************************************************
+Eval:  114
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8666666666666667 0.9791666666666666 0.9791666666666666
+num of lebal 0:  4646
+num of lebal 1:  758
+num of lebal 2:  758
+Epoch 1: 0.07855270371393547
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  6555
+num of lebal 2:  6555
+Scalar (theta) representative solutions: 
+(0.2646636315172068, 0.10280746130831211, 7.763216779967863)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.2646636315172068, 0.10280746130831211, 7.763216779967863)
+********************************************************************************
+Eval:  115
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.6274509803921569 1.0 1.0
+num of lebal 0:  4632
+num of lebal 1:  765
+num of lebal 2:  765
+Epoch 1: 0.07767952013690835
+Epoch 2: 0.07088006328829984
+Epoch 3: 0.06334171223712341
+Epoch 4: 0.06509564372763964
+Epoch 5: 0.0674362867537384
+Epoch 6: 0.0600435761541823
+Epoch 7: 0.06402548082941031
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  6670
+num of lebal 2:  6670
+Scalar (theta) representative solutions: 
+(0.2646636315172068, 0.10280746130831211, 7.763216779967863)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.2646636315172068, 0.10280746130831211, 7.763216779967863)
+********************************************************************************
+Eval:  116
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.96 0.9642857142857143 0.9642857142857143
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  6786
+num of lebal 2:  6786
+Scalar (theta) representative solutions: 
+(0.2646636315172068, 0.10280746130831211, 7.763216779967863)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.2646636315172068, 0.10280746130831211, 7.763216779967863)
+********************************************************************************
+Eval:  117
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.94 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  6903
+num of lebal 2:  6903
+Scalar (theta) representative solutions: 
+(0.2646636315172068, 0.10280746130831211, 7.763216779967863)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.2646636315172068, 0.10280746130831211, 7.763216779967863)
+********************************************************************************
+Eval:  118
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9795918367346939 0.9655172413793104 0.9655172413793104
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  7021
+num of lebal 2:  7021
+Scalar (theta) representative solutions: 
+(0.2646636315172068, 0.10280746130831211, 7.763216779967863)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.2646636315172068, 0.10280746130831211, 7.763216779967863)
+********************************************************************************
+Eval:  119
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8461538461538461 1.0 1.0
+num of lebal 0:  4506
+num of lebal 1:  828
+num of lebal 2:  828
+Epoch 1: 0.08340228761430502
+Epoch 2: 0.06504345942322416
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  7140
+num of lebal 2:  7140
+Scalar (theta) representative solutions: 
+(0.2646636315172068, 0.10280746130831211, 7.763216779967863)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.2646636315172068, 0.10280746130831211, 7.763216779967863)
+********************************************************************************
+Eval:  120
+No Pareto rep ind
+Scalar rep in cluster 0 is updated
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.85 1.0 1.0
+num of lebal 0:  4508
+num of lebal 1:  827
+num of lebal 2:  827
+Epoch 1: 0.07176511469019645
+Epoch 2: 0.06707267473401125
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  7260
+num of lebal 2:  7260
+Scalar (theta) representative solutions: 
+(0.31744497946145744, 0.20385035812564298, 6.922335095696834)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.31744497946145744, 0.20385035812564298, 6.922335095696834)
+********************************************************************************
+Eval:  121
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.7567567567567568 0.9512195121951219 0.9512195121951219
+num of lebal 0:  4434
+num of lebal 1:  864
+num of lebal 2:  864
+Epoch 1: 0.07310473088535765
+Epoch 2: 0.06657202025800654
+Epoch 3: 0.06532802643046902
+Epoch 4: 0.06362071339103727
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  7381
+num of lebal 2:  7381
+Scalar (theta) representative solutions: 
+(0.31744497946145744, 0.20385035812564298, 6.922335095696834)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.31744497946145744, 0.20385035812564298, 6.922335095696834)
+********************************************************************************
+Eval:  122
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.6944444444444444 1.0 1.0
+num of lebal 0:  4358
+num of lebal 1:  902
+num of lebal 2:  902
+Epoch 1: 0.07236235899129313
+Epoch 2: 0.06501601200244375
+Epoch 3: 0.06256873001419297
+Epoch 4: 0.06522051688800011
+Epoch 5: 0.06163385502904788
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  7503
+num of lebal 2:  7503
+Scalar (theta) representative solutions: 
+(0.31744497946145744, 0.20385035812564298, 6.922335095696834)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.31744497946145744, 0.20385035812564298, 6.922335095696834)
+********************************************************************************
+Eval:  123
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8448275862068966 0.95 0.95
+num of lebal 0:  4322
+num of lebal 1:  920
+num of lebal 2:  920
+Epoch 1: 0.07456428911404231
+Epoch 2: 0.06384336745723541
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  7626
+num of lebal 2:  7626
+Scalar (theta) representative solutions: 
+(0.31744497946145744, 0.20385035812564298, 6.922335095696834)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.31744497946145744, 0.20385035812564298, 6.922335095696834)
+********************************************************************************
+Eval:  124
+No Pareto rep ind
+Scalar rep in cluster 0 is updated
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9285714285714286 0.9722222222222222 0.9722222222222222
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  7750
+num of lebal 2:  7750
+Scalar (theta) representative solutions: 
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+********************************************************************************
+Eval:  125
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9411764705882353 0.9545454545454546 0.9545454545454546
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  7875
+num of lebal 2:  7875
+Scalar (theta) representative solutions: 
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+********************************************************************************
+Eval:  126
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.875 1.0 1.0
+num of lebal 0:  4274
+num of lebal 1:  944
+num of lebal 2:  944
+Epoch 1: 0.08741717014963608
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  8001
+num of lebal 2:  8001
+Scalar (theta) representative solutions: 
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+********************************************************************************
+Eval:  127
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.896551724137931 1.0 1.0
+num of lebal 0:  4198
+num of lebal 1:  982
+num of lebal 2:  982
+Epoch 1: 0.07747798736105851
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  8128
+num of lebal 2:  8128
+Scalar (theta) representative solutions: 
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+********************************************************************************
+Eval:  128
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9302325581395349 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  8256
+num of lebal 2:  8256
+Scalar (theta) representative solutions: 
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+********************************************************************************
+Eval:  129
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8627450980392157 1.0 1.0
+num of lebal 0:  4188
+num of lebal 1:  987
+num of lebal 2:  987
+Epoch 1: 0.08863057184076525
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  8385
+num of lebal 2:  8385
+Scalar (theta) representative solutions: 
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+********************************************************************************
+Eval:  130
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9318181818181818 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  8515
+num of lebal 2:  8515
+Scalar (theta) representative solutions: 
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+********************************************************************************
+Eval:  131
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8857142857142857 0.9767441860465116 0.9767441860465116
+num of lebal 0:  4134
+num of lebal 1:  1014
+num of lebal 2:  1014
+Epoch 1: 0.09176168137065911
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  8646
+num of lebal 2:  8646
+Scalar (theta) representative solutions: 
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+********************************************************************************
+Eval:  132
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.926829268292683 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  8778
+num of lebal 2:  8778
+Scalar (theta) representative solutions: 
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+********************************************************************************
+Eval:  133
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.7567567567567568 1.0 1.0
+num of lebal 0:  3984
+num of lebal 1:  1089
+num of lebal 2:  1089
+Epoch 1: 0.09631515472374587
+Epoch 2: 0.08694481088446906
+Epoch 3: 0.09170149402195887
+Epoch 4: 0.10408602781844725
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  8911
+num of lebal 2:  8911
+Scalar (theta) representative solutions: 
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+********************************************************************************
+Eval:  134
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9148936170212766 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  9045
+num of lebal 2:  9045
+Scalar (theta) representative solutions: 
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+********************************************************************************
+Eval:  135
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9090909090909091 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  9180
+num of lebal 2:  9180
+Scalar (theta) representative solutions: 
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+********************************************************************************
+Eval:  136
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8095238095238095 1.0 1.0
+num of lebal 0:  3846
+num of lebal 1:  1158
+num of lebal 2:  1158
+Epoch 1: 0.08935698777572325
+Epoch 2: 0.09109137361384252
+Epoch 3: 0.08927905382202465
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  9316
+num of lebal 2:  9316
+Scalar (theta) representative solutions: 
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+********************************************************************************
+Eval:  137
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9555555555555556 0.9090909090909091 0.9090909090909091
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  9453
+num of lebal 2:  9453
+Scalar (theta) representative solutions: 
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+********************************************************************************
+Eval:  138
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9545454545454546 0.9464285714285714 0.9464285714285714
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  9591
+num of lebal 2:  9591
+Scalar (theta) representative solutions: 
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+********************************************************************************
+Eval:  139
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9555555555555556 0.9393939393939394 0.9393939393939394
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  9730
+num of lebal 2:  9730
+Scalar (theta) representative solutions: 
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+********************************************************************************
+Eval:  140
+Pareto rep ind:  (0.25466497109908093, 0.22779690843303782, 6.191650835442478)
+dom_label = 1:  9
+len of ps_offs:  0
+len of s_offs:  0
+len of p_offs:  9
+Pareto dominates
+select best
+Scalar rep in cluster 0 is updated
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9772727272727273 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  9870
+num of lebal 2:  9870
+Scalar (theta) representative solutions: 
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+********************************************************************************
+Eval:  141
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9591836734693877 0.9310344827586207 0.9310344827586207
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  10011
+num of lebal 2:  10011
+Scalar (theta) representative solutions: 
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+********************************************************************************
+Eval:  142
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 0.9642857142857143 0.9642857142857143
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  10153
+num of lebal 2:  10153
+Scalar (theta) representative solutions: 
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+********************************************************************************
+Eval:  143
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9777777777777777 0.8484848484848485 0.8484848484848485
+num of lebal 0:  3736
+num of lebal 1:  1213
+num of lebal 2:  1213
+Epoch 1: 0.1077239906603538
+Epoch 2: 0.09500017039685323
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  10296
+num of lebal 2:  10296
+Scalar (theta) representative solutions: 
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+********************************************************************************
+Eval:  144
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8679245283018868 1.0 1.0
+num of lebal 0:  3744
+num of lebal 1:  1209
+num of lebal 2:  1209
+Epoch 1: 0.09489542198574914
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  10440
+num of lebal 2:  10440
+Scalar (theta) representative solutions: 
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+********************************************************************************
+Eval:  145
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.6176470588235294 1.0 1.0
+num of lebal 0:  3714
+num of lebal 1:  1224
+num of lebal 2:  1224
+Epoch 1: 0.09616844287899762
+Epoch 2: 0.09236033953764895
+Epoch 3: 0.09368838310492625
+Epoch 4: 0.0832987462756721
+Epoch 5: 0.08397343547030357
+Epoch 6: 0.08466491683680621
+Epoch 7: 0.09184512804826925
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  10585
+num of lebal 2:  10585
+Scalar (theta) representative solutions: 
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+********************************************************************************
+Eval:  146
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8 0.9811320754716981 0.9811320754716981
+num of lebal 0:  3608
+num of lebal 1:  1277
+num of lebal 2:  1277
+Epoch 1: 0.09141018619722267
+Epoch 2: 0.09121222211134866
+Epoch 3: 0.09016910709025715
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  10731
+num of lebal 2:  10731
+Scalar (theta) representative solutions: 
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+********************************************************************************
+Eval:  147
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 0.9285714285714286 0.9285714285714286
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  10878
+num of lebal 2:  10878
+Scalar (theta) representative solutions: 
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+********************************************************************************
+Eval:  148
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  11026
+num of lebal 2:  11026
+Scalar (theta) representative solutions: 
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+********************************************************************************
+Eval:  149
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 0.8484848484848485 0.8484848484848485
+num of lebal 0:  3504
+num of lebal 1:  1329
+num of lebal 2:  1329
+Epoch 1: 0.08857476681837609
+Epoch 2: 0.09066660037997705
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  11175
+num of lebal 2:  11175
+Scalar (theta) representative solutions: 
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+********************************************************************************
+Eval:  150
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.7959183673469388 1.0 1.0
+num of lebal 0:  3446
+num of lebal 1:  1358
+num of lebal 2:  1358
+Epoch 1: 0.09014887106484236
+Epoch 2: 0.08407186779043989
+Epoch 3: 0.0881712283755754
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  11325
+num of lebal 2:  11325
+Scalar (theta) representative solutions: 
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+********************************************************************************
+Eval:  151
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 0.8979591836734694 0.8979591836734694
+num of lebal 0:  3476
+num of lebal 1:  1343
+num of lebal 2:  1343
+Epoch 1: 0.09015787635456983
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  11476
+num of lebal 2:  11476
+Scalar (theta) representative solutions: 
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+********************************************************************************
+Eval:  152
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  11628
+num of lebal 2:  11628
+Scalar (theta) representative solutions: 
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+********************************************************************************
+Eval:  153
+Pareto rep ind:  (0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+dom_label = 1:  0
+len of ps_offs:  0
+len of s_offs:  0
+len of p_offs:  0
+No theta or Pareto dominates
+Eval:  153
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  11781
+num of lebal 2:  11781
+Scalar (theta) representative solutions: 
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+********************************************************************************
+Eval:  154
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9791666666666666 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  11935
+num of lebal 2:  11935
+Scalar (theta) representative solutions: 
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+********************************************************************************
+Eval:  155
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 0.8620689655172413 0.8620689655172413
+num of lebal 0:  3576
+num of lebal 1:  1293
+num of lebal 2:  1293
+Epoch 1: 0.10074599804610034
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  12090
+num of lebal 2:  12090
+Scalar (theta) representative solutions: 
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.18821179307563107, 0.1978079159125499, 6.277409800008217)
+********************************************************************************
+Eval:  156
+No Pareto rep ind
+Scalar rep in cluster 0 is updated
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8947368421052632 1.0 1.0
+num of lebal 0:  3514
+num of lebal 1:  1324
+num of lebal 2:  1324
+Epoch 1: 0.09694028330407072
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  12246
+num of lebal 2:  12246
+Scalar (theta) representative solutions: 
+(0.18821179307563107, 0.11542937694398653, 6.446907207967579)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.18821179307563107, 0.11542937694398653, 6.446907207967579)
+********************************************************************************
+Eval:  157
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9591836734693877 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  12403
+num of lebal 2:  12403
+Scalar (theta) representative solutions: 
+(0.18821179307563107, 0.11542937694398653, 6.446907207967579)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.18821179307563107, 0.11542937694398653, 6.446907207967579)
+********************************************************************************
+Eval:  158
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9814814814814815 0.9583333333333334 0.9583333333333334
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  12561
+num of lebal 2:  12561
+Scalar (theta) representative solutions: 
+(0.18821179307563107, 0.11542937694398653, 6.446907207967579)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.18821179307563107, 0.11542937694398653, 6.446907207967579)
+********************************************************************************
+Eval:  159
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  12720
+num of lebal 2:  12720
+Scalar (theta) representative solutions: 
+(0.18821179307563107, 0.11542937694398653, 6.446907207967579)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.18821179307563107, 0.11542937694398653, 6.446907207967579)
+********************************************************************************
+Eval:  160
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9464285714285714 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  12880
+num of lebal 2:  12880
+Scalar (theta) representative solutions: 
+(0.18821179307563107, 0.11542937694398653, 6.446907207967579)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.18821179307563107, 0.11542937694398653, 6.446907207967579)
+********************************************************************************
+Eval:  161
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 0.7857142857142857 0.7857142857142857
+num of lebal 0:  3688
+num of lebal 1:  1237
+num of lebal 2:  1237
+Epoch 1: 0.09579699156670758
+Epoch 2: 0.0955362155565442
+Epoch 3: 0.09738711910949624
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  13041
+num of lebal 2:  13041
+Scalar (theta) representative solutions: 
+(0.18821179307563107, 0.11542937694398653, 6.446907207967579)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.18821179307563107, 0.11542937694398653, 6.446907207967579)
+********************************************************************************
+Eval:  162
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  13203
+num of lebal 2:  13203
+Scalar (theta) representative solutions: 
+(0.18821179307563107, 0.11542937694398653, 6.446907207967579)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.18821179307563107, 0.11542937694398653, 6.446907207967579)
+********************************************************************************
+Eval:  163
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9830508474576272 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  13366
+num of lebal 2:  13366
+Scalar (theta) representative solutions: 
+(0.18821179307563107, 0.11542937694398653, 6.446907207967579)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.18821179307563107, 0.11542937694398653, 6.446907207967579)
+********************************************************************************
+Eval:  164
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  13530
+num of lebal 2:  13530
+Scalar (theta) representative solutions: 
+(0.18821179307563107, 0.11542937694398653, 6.446907207967579)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.18821179307563107, 0.11542937694398653, 6.446907207967579)
+********************************************************************************
+Eval:  165
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  13695
+num of lebal 2:  13695
+Scalar (theta) representative solutions: 
+(0.18821179307563107, 0.11542937694398653, 6.446907207967579)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.18821179307563107, 0.11542937694398653, 6.446907207967579)
+********************************************************************************
+Eval:  166
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9818181818181818 0.9130434782608695 0.9130434782608695
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  13861
+num of lebal 2:  13861
+Scalar (theta) representative solutions: 
+(0.18821179307563107, 0.11542937694398653, 6.446907207967579)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.18821179307563107, 0.11542937694398653, 6.446907207967579)
+********************************************************************************
+Eval:  167
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9464285714285714 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  14028
+num of lebal 2:  14028
+Scalar (theta) representative solutions: 
+(0.18821179307563107, 0.11542937694398653, 6.446907207967579)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.18821179307563107, 0.11542937694398653, 6.446907207967579)
+********************************************************************************
+Eval:  168
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8979591836734694 0.8275862068965517 0.8275862068965517
+num of lebal 0:  3928
+num of lebal 1:  1117
+num of lebal 2:  1117
+Epoch 1: 0.10175260639184883
+Epoch 2: 0.09942645217181025
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  14196
+num of lebal 2:  14196
+Scalar (theta) representative solutions: 
+(0.18821179307563107, 0.11542937694398653, 6.446907207967579)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.18821179307563107, 0.11542937694398653, 6.446907207967579)
+********************************************************************************
+Eval:  169
+Pareto rep ind:  (0.18821179307563107, 0.11542937694398653, 6.446907207967579)
+dom_label = 1:  1
+len of ps_offs:  0
+len of s_offs:  0
+len of p_offs:  1
+Pareto dominates
+Scalar rep in cluster 0 is updated
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.23076923076923078 0.8615384615384616 0.8615384615384616
+num of lebal 0:  3922
+num of lebal 1:  1120
+num of lebal 2:  1120
+Epoch 1: 0.1114894790439794
+Epoch 2: 0.11404407862091312
+Epoch 3: 0.10254664637553723
+Epoch 4: 0.10312533209497264
+Epoch 5: 0.12646527500543261
+Epoch 6: 0.09813096934273222
+Epoch 7: 0.1013382815519454
+Epoch 8: 0.09826300835593994
+Epoch 9: 0.09062036860328881
+Epoch 10: 0.08943364721447847
+Epoch 11: 0.08967538089238088
+Epoch 12: 0.0994480218704539
+Epoch 13: 0.09115557463289542
+Epoch 14: 0.0917460484975476
+Epoch 15: 0.09333573023117886
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  14365
+num of lebal 2:  14365
+Scalar (theta) representative solutions: 
+(0.15036503848935412, 0.09741897261700455, 6.309171905084573)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.15036503848935412, 0.09741897261700455, 6.309171905084573)
+********************************************************************************
+Eval:  170
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  14535
+num of lebal 2:  14535
+Scalar (theta) representative solutions: 
+(0.15036503848935412, 0.09741897261700455, 6.309171905084573)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.15036503848935412, 0.09741897261700455, 6.309171905084573)
+********************************************************************************
+Eval:  171
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8936170212765957 0.7419354838709677 0.7419354838709677
+num of lebal 0:  3994
+num of lebal 1:  1084
+num of lebal 2:  1084
+Epoch 1: 0.11194751928729328
+Epoch 2: 0.09995876392952789
+Epoch 3: 0.10461364076303926
+Epoch 4: 0.1012133455598833
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  14706
+num of lebal 2:  14706
+Scalar (theta) representative solutions: 
+(0.15036503848935412, 0.09741897261700455, 6.309171905084573)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.15036503848935412, 0.09741897261700455, 6.309171905084573)
+********************************************************************************
+Eval:  172
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 0.8 0.8
+num of lebal 0:  3986
+num of lebal 1:  1088
+num of lebal 2:  1088
+Epoch 1: 0.10028985342483755
+Epoch 2: 0.0954186685450877
+Epoch 3: 0.0903688833947472
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  14878
+num of lebal 2:  14878
+Scalar (theta) representative solutions: 
+(0.15036503848935412, 0.09741897261700455, 6.309171905084573)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.15036503848935412, 0.09741897261700455, 6.309171905084573)
+********************************************************************************
+Eval:  173
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.7954545454545454 0.9117647058823529 0.9117647058823529
+num of lebal 0:  4048
+num of lebal 1:  1057
+num of lebal 2:  1057
+Epoch 1: 0.10779175190544577
+Epoch 2: 0.09341634475080769
+Epoch 3: 0.10192021155980815
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  15051
+num of lebal 2:  15051
+Scalar (theta) representative solutions: 
+(0.15036503848935412, 0.09741897261700455, 6.309171905084573)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.15036503848935412, 0.09741897261700455, 6.309171905084573)
+********************************************************************************
+Eval:  174
+Pareto rep ind:  (0.15036503848935412, 0.09741897261700455, 6.309171905084573)
+dom_label = 1:  1
+len of ps_offs:  0
+len of s_offs:  0
+len of p_offs:  1
+Pareto dominates
+Scalar rep in cluster 0 is updated
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.0 1.0 1.0
+num of lebal 0:  4002
+num of lebal 1:  1080
+num of lebal 2:  1080
+Epoch 1: 0.10331920914501531
+Epoch 2: 0.09118026146095806
+Epoch 3: 0.11541158395669775
+Epoch 4: 0.09937042354031857
+Epoch 5: 0.09092685750352672
+Epoch 6: 0.10508439889891855
+Epoch 7: 0.09200936171510908
+Epoch 8: 0.09635289676410237
+Epoch 9: 0.08968329530720806
+Epoch 10: 0.10102659948385825
+Epoch 11: 0.10104757159890443
+Epoch 12: 0.0930591452736504
+Epoch 13: 0.09007764819507617
+Epoch 14: 0.09995566140450152
+Epoch 15: 0.09687965951975763
+Epoch 16: 0.09186310277180505
+Epoch 17: 0.08903848290397579
+Epoch 18: 0.08723458145513474
+Epoch 19: 0.09381743221316931
+Epoch 20: 0.09358029221208679
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  15225
+num of lebal 2:  15225
+Scalar (theta) representative solutions: 
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+********************************************************************************
+Eval:  175
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9402985074626866 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  15400
+num of lebal 2:  15400
+Scalar (theta) representative solutions: 
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+********************************************************************************
+Eval:  176
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8846153846153846 1.0 1.0
+num of lebal 0:  4102
+num of lebal 1:  1030
+num of lebal 2:  1030
+Epoch 1: 0.09438791994845079
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  15576
+num of lebal 2:  15576
+Scalar (theta) representative solutions: 
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+********************************************************************************
+Eval:  177
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9322033898305084 0.8947368421052632 0.8947368421052632
+num of lebal 0:  4114
+num of lebal 1:  1024
+num of lebal 2:  1024
+Epoch 1: 0.09247296961227075
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  15753
+num of lebal 2:  15753
+Scalar (theta) representative solutions: 
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+********************************************************************************
+Eval:  178
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.7636363636363637 0.9130434782608695 0.9130434782608695
+num of lebal 0:  4202
+num of lebal 1:  980
+num of lebal 2:  980
+Epoch 1: 0.11810876614862928
+Epoch 2: 0.10435901096795198
+Epoch 3: 0.09662600815141757
+Epoch 4: 0.09331008391165285
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  15931
+num of lebal 2:  15931
+Scalar (theta) representative solutions: 
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+********************************************************************************
+Eval:  179
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8723404255319149 1.0 1.0
+num of lebal 0:  4262
+num of lebal 1:  950
+num of lebal 2:  950
+Epoch 1: 0.12041553767118121
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  16110
+num of lebal 2:  16110
+Scalar (theta) representative solutions: 
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+********************************************************************************
+Eval:  180
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 0.8571428571428571 0.8571428571428571
+num of lebal 0:  4262
+num of lebal 1:  950
+num of lebal 2:  950
+Epoch 1: 0.11189733613571973
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  16290
+num of lebal 2:  16290
+Scalar (theta) representative solutions: 
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+********************************************************************************
+Eval:  181
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9577464788732394 0.8571428571428571 0.8571428571428571
+num of lebal 0:  4376
+num of lebal 1:  893
+num of lebal 2:  893
+Epoch 1: 0.1068716697501009
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  16471
+num of lebal 2:  16471
+Scalar (theta) representative solutions: 
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+********************************************************************************
+Eval:  182
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9833333333333333 0.9444444444444444 0.9444444444444444
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  16653
+num of lebal 2:  16653
+Scalar (theta) representative solutions: 
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+********************************************************************************
+Eval:  183
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9402985074626866 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  16836
+num of lebal 2:  16836
+Scalar (theta) representative solutions: 
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+********************************************************************************
+Eval:  184
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9545454545454546 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  17020
+num of lebal 2:  17020
+Scalar (theta) representative solutions: 
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+********************************************************************************
+Eval:  185
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9666666666666667 0.9444444444444444 0.9444444444444444
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  17205
+num of lebal 2:  17205
+Scalar (theta) representative solutions: 
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+********************************************************************************
+Eval:  186
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8923076923076924 1.0 1.0
+num of lebal 0:  4670
+num of lebal 1:  746
+num of lebal 2:  746
+Epoch 1: 0.1350030691599367
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  17391
+num of lebal 2:  17391
+Scalar (theta) representative solutions: 
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+********************************************************************************
+Eval:  187
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9636363636363636 0.7391304347826086 0.7391304347826086
+num of lebal 0:  4642
+num of lebal 1:  760
+num of lebal 2:  760
+Epoch 1: 0.1410994661363913
+Epoch 2: 0.14186536448336945
+Epoch 3: 0.12697132148929519
+Epoch 4: 0.11924232422359712
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  17578
+num of lebal 2:  17578
+Scalar (theta) representative solutions: 
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+********************************************************************************
+Eval:  188
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.953125 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  17766
+num of lebal 2:  17766
+Scalar (theta) representative solutions: 
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+********************************************************************************
+Eval:  189
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8979591836734694 0.9655172413793104 0.9655172413793104
+num of lebal 0:  4778
+num of lebal 1:  692
+num of lebal 2:  692
+Epoch 1: 0.15986323155887386
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  17955
+num of lebal 2:  17955
+Scalar (theta) representative solutions: 
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+********************************************************************************
+Eval:  190
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.7551020408163265 1.0 1.0
+num of lebal 0:  4732
+num of lebal 1:  715
+num of lebal 2:  715
+Epoch 1: 0.15718257550748518
+Epoch 2: 0.1483842928271374
+Epoch 3: 0.13966168499903975
+Epoch 4: 0.13979634329425702
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  18145
+num of lebal 2:  18145
+Scalar (theta) representative solutions: 
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+********************************************************************************
+Eval:  191
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9324324324324325 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  18336
+num of lebal 2:  18336
+Scalar (theta) representative solutions: 
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+********************************************************************************
+Eval:  192
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.5555555555555556 1.0 1.0
+num of lebal 0:  4716
+num of lebal 1:  723
+num of lebal 2:  723
+Epoch 1: 0.15356533812272116
+Epoch 2: 0.1406213296143039
+Epoch 3: 0.1561986771388066
+Epoch 4: 0.14050008138458345
+Epoch 5: 0.15787726805733585
+Epoch 6: 0.13126540262194186
+Epoch 7: 0.14528162765842645
+Epoch 8: 0.13732791297292155
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  18528
+num of lebal 2:  18528
+Scalar (theta) representative solutions: 
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+********************************************************************************
+Eval:  193
+Pareto rep ind:  (0.12123006980324336, 0.08860111838022816, 6.014160033810988)
+dom_label = 1:  1
+len of ps_offs:  0
+len of s_offs:  0
+len of p_offs:  1
+Pareto dominates
+Scalar rep in cluster 0 is updated
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  18721
+num of lebal 2:  18721
+Scalar (theta) representative solutions: 
+(0.0883209503244116, 0.08860111838022816, 5.8777061035093565)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.0883209503244116, 0.08860111838022816, 5.8777061035093565)
+********************************************************************************
+Eval:  194
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9824561403508771 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  18915
+num of lebal 2:  18915
+Scalar (theta) representative solutions: 
+(0.0883209503244116, 0.08860111838022816, 5.8777061035093565)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.0883209503244116, 0.08860111838022816, 5.8777061035093565)
+********************************************************************************
+Eval:  195
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.675 1.0 1.0
+num of lebal 0:  4640
+num of lebal 1:  761
+num of lebal 2:  761
+Epoch 1: 0.15569376322040285
+Epoch 2: 0.12908746708917956
+Epoch 3: 0.15751929073522128
+Epoch 4: 0.13299049586636724
+Epoch 5: 0.13806428887683492
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  19110
+num of lebal 2:  19110
+Scalar (theta) representative solutions: 
+(0.0883209503244116, 0.08860111838022816, 5.8777061035093565)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.0883209503244116, 0.08860111838022816, 5.8777061035093565)
+********************************************************************************
+Eval:  196
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 0.9230769230769231 0.9230769230769231
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  19306
+num of lebal 2:  19306
+Scalar (theta) representative solutions: 
+(0.0883209503244116, 0.08860111838022816, 5.8777061035093565)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.0883209503244116, 0.08860111838022816, 5.8777061035093565)
+********************************************************************************
+Eval:  197
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9705882352941176 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  19503
+num of lebal 2:  19503
+Scalar (theta) representative solutions: 
+(0.0883209503244116, 0.08860111838022816, 5.8777061035093565)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.0883209503244116, 0.08860111838022816, 5.8777061035093565)
+********************************************************************************
+Eval:  198
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8888888888888888 1.0 1.0
+num of lebal 0:  4812
+num of lebal 1:  675
+num of lebal 2:  675
+Epoch 1: 0.15188372017420018
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  19701
+num of lebal 2:  19701
+Scalar (theta) representative solutions: 
+(0.0883209503244116, 0.08860111838022816, 5.8777061035093565)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.0883209503244116, 0.08860111838022816, 5.8777061035093565)
+********************************************************************************
+Eval:  199
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.85 0.9736842105263158 0.9736842105263158
+num of lebal 0:  4780
+num of lebal 1:  691
+num of lebal 2:  691
+Epoch 1: 0.16641598408124916
+Epoch 2: 0.143214321121033
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  19900
+num of lebal 2:  19900
+Scalar (theta) representative solutions: 
+(0.0883209503244116, 0.08860111838022816, 5.8777061035093565)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.0883209503244116, 0.08860111838022816, 5.8777061035093565)
+********************************************************************************
+Eval:  200
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.6571428571428571 1.0 1.0
+num of lebal 0:  4712
+num of lebal 1:  725
+num of lebal 2:  725
+Epoch 1: 0.16286950058019067
+Epoch 2: 0.14892045276268467
+Epoch 3: 0.13787577586933739
+Epoch 4: 0.15471039133368378
+Epoch 5: 0.14273146730533998
+Epoch 6: 0.14005171460307014
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  20100
+num of lebal 2:  20100
+Scalar (theta) representative solutions: 
+(0.0883209503244116, 0.08860111838022816, 5.8777061035093565)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.0883209503244116, 0.08860111838022816, 5.8777061035093565)
+********************************************************************************
+Eval:  201
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8888888888888888 1.0 1.0
+num of lebal 0:  4698
+num of lebal 1:  732
+num of lebal 2:  732
+Epoch 1: 0.14980958160881552
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  20301
+num of lebal 2:  20301
+Scalar (theta) representative solutions: 
+(0.0883209503244116, 0.08860111838022816, 5.8777061035093565)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.0883209503244116, 0.08860111838022816, 5.8777061035093565)
+********************************************************************************
+Eval:  202
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8604651162790697 1.0 1.0
+num of lebal 0:  4636
+num of lebal 1:  763
+num of lebal 2:  763
+Epoch 1: 0.1646306997290547
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  20503
+num of lebal 2:  20503
+Scalar (theta) representative solutions: 
+(0.0883209503244116, 0.08860111838022816, 5.8777061035093565)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.0883209503244116, 0.08860111838022816, 5.8777061035093565)
+********************************************************************************
+Eval:  203
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9069767441860465 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  20706
+num of lebal 2:  20706
+Scalar (theta) representative solutions: 
+(0.0883209503244116, 0.08860111838022816, 5.8777061035093565)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.0883209503244116, 0.08860111838022816, 5.8777061035093565)
+********************************************************************************
+Eval:  204
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.5918367346938775 1.0 1.0
+num of lebal 0:  4562
+num of lebal 1:  800
+num of lebal 2:  800
+Epoch 1: 0.17274782034554012
+Epoch 2: 0.14909731067832888
+Epoch 3: 0.15314200296611982
+Epoch 4: 0.15232008770880304
+Epoch 5: 0.1602159646180473
+Epoch 6: 0.14807805302190966
+Epoch 7: 0.15060268247915057
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  20910
+num of lebal 2:  20910
+Scalar (theta) representative solutions: 
+(0.0883209503244116, 0.08860111838022816, 5.8777061035093565)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.0883209503244116, 0.08860111838022816, 5.8777061035093565)
+********************************************************************************
+Eval:  205
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.2692307692307692 0.9807692307692307 0.9807692307692307
+num of lebal 0:  4488
+num of lebal 1:  837
+num of lebal 2:  837
+Epoch 1: 0.14366636615381648
+Epoch 2: 0.1729303152334196
+Epoch 3: 0.15368700108534314
+Epoch 4: 0.15767672340448347
+Epoch 5: 0.13178420160448304
+Epoch 6: 0.19320797493652359
+Epoch 7: 0.13563286927118512
+Epoch 8: 0.1448437627983989
+Epoch 9: 0.1507702237911947
+Epoch 10: 0.15744119011097313
+Epoch 11: 0.14987812864888517
+Epoch 12: 0.14781708242323424
+Epoch 13: 0.13955202089728777
+Epoch 14: 0.1383334027767336
+Epoch 15: 0.13114527995104616
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  21115
+num of lebal 2:  21115
+Scalar (theta) representative solutions: 
+(0.0883209503244116, 0.08860111838022816, 5.8777061035093565)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.0883209503244116, 0.08860111838022816, 5.8777061035093565)
+********************************************************************************
+Eval:  206
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9259259259259259 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  21321
+num of lebal 2:  21321
+Scalar (theta) representative solutions: 
+(0.0883209503244116, 0.08860111838022816, 5.8777061035093565)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.0883209503244116, 0.08860111838022816, 5.8777061035093565)
+********************************************************************************
+Eval:  207
+Pareto rep ind:  (0.0883209503244116, 0.08860111838022816, 5.8777061035093565)
+dom_label = 1:  85
+len of ps_offs:  0
+len of s_offs:  0
+len of p_offs:  85
+Pareto dominates
+select best
+Scalar rep in cluster 0 is updated
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.6666666666666666 1.0 1.0
+num of lebal 0:  4356
+num of lebal 1:  903
+num of lebal 2:  903
+Epoch 1: 0.15198324450624653
+Epoch 2: 0.1319534312547643
+Epoch 3: 0.14456864216707532
+Epoch 4: 0.13794004913284372
+Epoch 5: 0.13513301938308953
+Epoch 6: 0.1576649539674502
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  21528
+num of lebal 2:  21528
+Scalar (theta) representative solutions: 
+(0.08966606783453102, 0.08858854168592555, 5.718882447025299)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.08966606783453102, 0.08858854168592555, 5.718882447025299)
+********************************************************************************
+Eval:  208
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8913043478260869 1.0 1.0
+num of lebal 0:  4322
+num of lebal 1:  920
+num of lebal 2:  920
+Epoch 1: 0.138088514584411
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  21736
+num of lebal 2:  21736
+Scalar (theta) representative solutions: 
+(0.08966606783453102, 0.08858854168592555, 5.718882447025299)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.08966606783453102, 0.08858854168592555, 5.718882447025299)
+********************************************************************************
+Eval:  209
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.875 1.0 1.0
+num of lebal 0:  4328
+num of lebal 1:  917
+num of lebal 2:  917
+Epoch 1: 0.13840485217985865
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  21945
+num of lebal 2:  21945
+Scalar (theta) representative solutions: 
+(0.08966606783453102, 0.08858854168592555, 5.718882447025299)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.08966606783453102, 0.08858854168592555, 5.718882447025299)
+********************************************************************************
+Eval:  210
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8571428571428571 0.9444444444444444 0.9444444444444444
+num of lebal 0:  4274
+num of lebal 1:  944
+num of lebal 2:  944
+Epoch 1: 0.15244878339219278
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  22155
+num of lebal 2:  22155
+Scalar (theta) representative solutions: 
+(0.08966606783453102, 0.08858854168592555, 5.718882447025299)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.08966606783453102, 0.08858854168592555, 5.718882447025299)
+********************************************************************************
+Eval:  211
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8461538461538461 1.0 1.0
+num of lebal 0:  4252
+num of lebal 1:  955
+num of lebal 2:  955
+Epoch 1: 0.1411817210287319
+Epoch 2: 0.14620423570777158
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  22366
+num of lebal 2:  22366
+Scalar (theta) representative solutions: 
+(0.08966606783453102, 0.08858854168592555, 5.718882447025299)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.08966606783453102, 0.08858854168592555, 5.718882447025299)
+********************************************************************************
+Eval:  212
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.7727272727272727 0.9705882352941176 0.9705882352941176
+num of lebal 0:  4214
+num of lebal 1:  974
+num of lebal 2:  974
+Epoch 1: 0.15510800732733981
+Epoch 2: 0.14128778976451006
+Epoch 3: 0.15972865599694955
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  22578
+num of lebal 2:  22578
+Scalar (theta) representative solutions: 
+(0.08966606783453102, 0.08858854168592555, 5.718882447025299)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.08966606783453102, 0.08858854168592555, 5.718882447025299)
+********************************************************************************
+Eval:  213
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.96 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  22791
+num of lebal 2:  22791
+Scalar (theta) representative solutions: 
+(0.08966606783453102, 0.08858854168592555, 5.718882447025299)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.08966606783453102, 0.08858854168592555, 5.718882447025299)
+********************************************************************************
+Eval:  214
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.7407407407407407 0.9166666666666666 0.9166666666666666
+num of lebal 0:  4224
+num of lebal 1:  969
+num of lebal 2:  969
+Epoch 1: 0.14885795902016866
+Epoch 2: 0.14704080722222365
+Epoch 3: 0.1440953462736903
+Epoch 4: 0.1511176537645141
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  23005
+num of lebal 2:  23005
+Scalar (theta) representative solutions: 
+(0.08966606783453102, 0.08858854168592555, 5.718882447025299)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.08966606783453102, 0.08858854168592555, 5.718882447025299)
+********************************************************************************
+Eval:  215
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.6216216216216216 1.0 1.0
+num of lebal 0:  4160
+num of lebal 1:  1001
+num of lebal 2:  1001
+Epoch 1: 0.145845122172116
+Epoch 2: 0.1432000240745322
+Epoch 3: 0.1390519123234897
+Epoch 4: 0.14385318044823994
+Epoch 5: 0.13659894612612966
+Epoch 6: 0.1483407567588159
+Epoch 7: 0.1434808383874325
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  23220
+num of lebal 2:  23220
+Scalar (theta) representative solutions: 
+(0.08966606783453102, 0.08858854168592555, 5.718882447025299)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.08966606783453102, 0.08858854168592555, 5.718882447025299)
+********************************************************************************
+Eval:  216
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9354838709677419 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  23436
+num of lebal 2:  23436
+Scalar (theta) representative solutions: 
+(0.08966606783453102, 0.08858854168592555, 5.718882447025299)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.08966606783453102, 0.08858854168592555, 5.718882447025299)
+********************************************************************************
+Eval:  217
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.84 1.0 1.0
+num of lebal 0:  4116
+num of lebal 1:  1023
+num of lebal 2:  1023
+Epoch 1: 0.15080206740859878
+Epoch 2: 0.15002148546317082
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  23653
+num of lebal 2:  23653
+Scalar (theta) representative solutions: 
+(0.08966606783453102, 0.08858854168592555, 5.718882447025299)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.08966606783453102, 0.08858854168592555, 5.718882447025299)
+********************************************************************************
+Eval:  218
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 0.975609756097561 0.975609756097561
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  23871
+num of lebal 2:  23871
+Scalar (theta) representative solutions: 
+(0.08966606783453102, 0.08858854168592555, 5.718882447025299)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.08966606783453102, 0.08858854168592555, 5.718882447025299)
+********************************************************************************
+Eval:  219
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9538461538461539 0.9230769230769231 0.9230769230769231
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  24090
+num of lebal 2:  24090
+Scalar (theta) representative solutions: 
+(0.08966606783453102, 0.08858854168592555, 5.718882447025299)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.08966606783453102, 0.08858854168592555, 5.718882447025299)
+********************************************************************************
+Eval:  220
+Pareto rep ind:  (0.08966606783453102, 0.08858854168592555, 5.718882447025299)
+dom_label = 1:  47
+len of ps_offs:  0
+len of s_offs:  0
+len of p_offs:  47
+Pareto dominates
+select best
+Scalar rep in cluster 0 is updated
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8888888888888888 1.0 1.0
+num of lebal 0:  4038
+num of lebal 1:  1062
+num of lebal 2:  1062
+Epoch 1: 0.13191035714174182
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  24310
+num of lebal 2:  24310
+Scalar (theta) representative solutions: 
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+********************************************************************************
+Eval:  221
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9230769230769231 0.9615384615384616 0.9615384615384616
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  24531
+num of lebal 2:  24531
+Scalar (theta) representative solutions: 
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+********************************************************************************
+Eval:  222
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9852941176470589 0.7 0.7
+num of lebal 0:  4074
+num of lebal 1:  1044
+num of lebal 2:  1044
+Epoch 1: 0.14979202821464735
+Epoch 2: 0.125515786117821
+Epoch 3: 0.13967153803479176
+Epoch 4: 0.13303275949712554
+Epoch 5: 0.12912681016472646
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  24753
+num of lebal 2:  24753
+Scalar (theta) representative solutions: 
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+********************************************************************************
+Eval:  223
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.7894736842105263 1.0 1.0
+num of lebal 0:  4026
+num of lebal 1:  1068
+num of lebal 2:  1068
+Epoch 1: 0.1505731739817969
+Epoch 2: 0.1275334320962429
+Epoch 3: 0.12583172747894272
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  24976
+num of lebal 2:  24976
+Scalar (theta) representative solutions: 
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+********************************************************************************
+Eval:  224
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9230769230769231 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  25200
+num of lebal 2:  25200
+Scalar (theta) representative solutions: 
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+********************************************************************************
+Eval:  225
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8813559322033898 1.0 1.0
+num of lebal 0:  3994
+num of lebal 1:  1084
+num of lebal 2:  1084
+Epoch 1: 0.14406316549821221
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  25425
+num of lebal 2:  25425
+Scalar (theta) representative solutions: 
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+********************************************************************************
+Eval:  226
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9545454545454546 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  25651
+num of lebal 2:  25651
+Scalar (theta) representative solutions: 
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+********************************************************************************
+Eval:  227
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8679245283018868 1.0 1.0
+num of lebal 0:  3924
+num of lebal 1:  1119
+num of lebal 2:  1119
+Epoch 1: 0.13910370114515175
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  25878
+num of lebal 2:  25878
+Scalar (theta) representative solutions: 
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+********************************************************************************
+Eval:  228
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9210526315789473 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  26106
+num of lebal 2:  26106
+Scalar (theta) representative solutions: 
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+********************************************************************************
+Eval:  229
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9344262295081968 0.9411764705882353 0.9411764705882353
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  26335
+num of lebal 2:  26335
+Scalar (theta) representative solutions: 
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+********************************************************************************
+Eval:  230
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8333333333333334 1.0 1.0
+num of lebal 0:  3856
+num of lebal 1:  1153
+num of lebal 2:  1153
+Epoch 1: 0.14187405871256337
+Epoch 2: 0.13345154668228615
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  26565
+num of lebal 2:  26565
+Scalar (theta) representative solutions: 
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+********************************************************************************
+Eval:  231
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9629629629629629 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  26796
+num of lebal 2:  26796
+Scalar (theta) representative solutions: 
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+********************************************************************************
+Eval:  232
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9629629629629629 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  27028
+num of lebal 2:  27028
+Scalar (theta) representative solutions: 
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+********************************************************************************
+Eval:  233
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  27261
+num of lebal 2:  27261
+Scalar (theta) representative solutions: 
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+********************************************************************************
+Eval:  234
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  27495
+num of lebal 2:  27495
+Scalar (theta) representative solutions: 
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+********************************************************************************
+Eval:  235
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9354838709677419 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  27730
+num of lebal 2:  27730
+Scalar (theta) representative solutions: 
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+********************************************************************************
+Eval:  236
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.875 1.0 1.0
+num of lebal 0:  3704
+num of lebal 1:  1229
+num of lebal 2:  1229
+Epoch 1: 0.12696800725968854
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  27966
+num of lebal 2:  27966
+Scalar (theta) representative solutions: 
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+********************************************************************************
+Eval:  237
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9285714285714286 0.98 0.98
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  28203
+num of lebal 2:  28203
+Scalar (theta) representative solutions: 
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+********************************************************************************
+Eval:  238
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9830508474576272 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  28441
+num of lebal 2:  28441
+Scalar (theta) representative solutions: 
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+********************************************************************************
+Eval:  239
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 0.9772727272727273 0.9772727272727273
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  28680
+num of lebal 2:  28680
+Scalar (theta) representative solutions: 
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+********************************************************************************
+Eval:  240
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 0.9767441860465116 0.9767441860465116
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  28920
+num of lebal 2:  28920
+Scalar (theta) representative solutions: 
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+********************************************************************************
+Eval:  241
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  1.0 0.9761904761904762 0.9761904761904762
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  29161
+num of lebal 2:  29161
+Scalar (theta) representative solutions: 
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+********************************************************************************
+Eval:  242
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.8947368421052632 1.0 1.0
+num of lebal 0:  3664
+num of lebal 1:  1249
+num of lebal 2:  1249
+Epoch 1: 0.12595551361334678
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  29403
+num of lebal 2:  29403
+Scalar (theta) representative solutions: 
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+********************************************************************************
+Eval:  243
+Pareto rep ind:  (0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+dom_label = 1:  0
+len of ps_offs:  0
+len of s_offs:  0
+len of p_offs:  0
+No theta or Pareto dominates
+Eval:  243
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9666666666666667 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  29646
+num of lebal 2:  29646
+Scalar (theta) representative solutions: 
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+********************************************************************************
+Eval:  244
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.967741935483871 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  29890
+num of lebal 2:  29890
+Scalar (theta) representative solutions: 
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+********************************************************************************
+Eval:  245
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.975609756097561 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  30135
+num of lebal 2:  30135
+Scalar (theta) representative solutions: 
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+********************************************************************************
+Eval:  246
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.967741935483871 0.9574468085106383 0.9574468085106383
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  30381
+num of lebal 2:  30381
+Scalar (theta) representative solutions: 
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+********************************************************************************
+Eval:  247
+Pareto rep ind:  (0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+dom_label = 1:  0
+len of ps_offs:  0
+len of s_offs:  0
+len of p_offs:  0
+No theta or Pareto dominates
+Eval:  247
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9777777777777777 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  30628
+num of lebal 2:  30628
+Scalar (theta) representative solutions: 
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+********************************************************************************
+Eval:  248
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9302325581395349 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  30876
+num of lebal 2:  30876
+Scalar (theta) representative solutions: 
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+********************************************************************************
+Eval:  249
+No Pareto rep ind
+Pareto-Net is updating:
+Estimated accuracy for each class:  0.9772727272727273 1.0 1.0
+Initiating Theta-Net:
+num of lebal 0:  0
+num of lebal 1:  31125
+num of lebal 2:  31125
+Scalar (theta) representative solutions: 
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+Non-dominated ones among scalar (theta) representative solutions:
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+********************************************************************************
+Final Pareto nondominated solutions obtained:
+(0.009888169678445718, 0.5799675351461796, 16.994721446199502)
+(0.5797397545779157, 0.011689095444330583, 13.719723031880154)
+(0.635244279552193, 0.011689095444330583, 12.985054395623772)
+(0.6633661774214265, 0.011689095444330583, 12.880699431424546)
+(0.6325133901696967, 0.007421627577090112, 13.180962874011394)
+(0.2644779274860501, 0.22779690843303782, 5.501804289370728)
+(0.08966606783453102, 0.08858854168592555, 5.718882447025299)
+(0.06060985689080385, 0.17612834911913716, 6.190840559801288)
+(0.021898952309637926, 0.08860111838022816, 6.256473532564807)
+(0.07229676949670794, 0.08858854168592555, 5.746784035647348)
+(0.020767576852673247, 0.20639650731592543, 6.230020457141151)
+(0.16393197065327647, 0.08860108395079899, 5.549558142682186)
+(0.16427825491546813, 0.08860108395079899, 5.529345068114911)
+(0.07267162256072185, 0.021758973612081747, 6.038062034035211)
+(0.07220778533892028, 0.05199076046817047, 6.28655266435504)
+(0.16394169107103576, 0.05167422141244106, 5.609490794064069)
+(0.16394169107103576, 0.018334014655654554, 5.745756462508618)
+(0.16427825491546813, 0.05038160307093027, 5.6092287758784565)
+(0.16427825491546813, 0.0888174882003557, 5.528816872844735)
+(0.07784814469382459, 0.018334014655654554, 5.943645296791385)
+(0.16393197065327647, 0.08860157120342119, 5.538487893610178)
+(0.15576545962161992, 0.08861278405649042, 5.565914325459286)
+(0.07229676949670794, 0.08852746074233585, 5.753993793419141)
+(0.07229424338314203, 0.08858854168592555, 5.75776108157838)
+(0.16427825491546813, 0.08860132230594236, 5.529228477861513)
+(0.15576545962161992, 0.08881391262107391, 5.546337783053092)
+(0.16427825491546813, 0.0886008789401962, 5.537463020815996)
+********************************************************************************
+IGD: 0.585271040276746
+GD:  1.5351963067951369
+HV:  0.46615565049869495
+Time cost:  290.4310562610626
+

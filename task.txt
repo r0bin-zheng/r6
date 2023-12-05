@@ -1,0 +1,8 @@
+
+python multi_tdeadp_main_2.py --n_obj=3 --n_var=3 --alg=2 --rate=0.5 --strategy=2 --max_fe=50 --problem=dtlz1
+python multi_tdeadp_main_2.py --n_obj=3 --n_var=3 --alg=2 --rate=0.5 --strategy=2 --max_fe=50 --problem=dtlz2
+python multi_tdeadp_main_2.py --n_obj=3 --n_var=3 --alg=2 --rate=0.5 --strategy=2 --max_fe=50 --problem=dtlz3
+python multi_tdeadp_main_2.py --n_obj=3 --n_var=3 --alg=2 --rate=0.5 --strategy=2 --max_fe=50 --problem=dtlz4
+python multi_tdeadp_main_2.py --n_obj=3 --n_var=3 --alg=2 --rate=0.5 --strategy=2 --max_fe=50 --problem=dtlz5
+python multi_tdeadp_main_2.py --n_obj=3 --n_var=3 --alg=2 --rate=0.5 --strategy=2 --max_fe=50 --problem=dtlz6
+python multi_tdeadp_main_2.py --n_obj=3 --n_var=3 --alg=2 --rate=0.5 --strategy=2 --max_fe=50 --problem=dtlz7

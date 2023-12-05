@@ -1,0 +1,12 @@
+ID: 20231130205629_8127
+
+Problem: dtlz7
+Number of objects: 3
+Number of variables: 5
+Algorithm choice: 0
+Maximum number of function evaluations: 250
+
+IGD: 0.40549045402614226
+GD: 0.008540182669804905
+HV: 0.6757488198504403
+Time cost: 2120.1403794288635
