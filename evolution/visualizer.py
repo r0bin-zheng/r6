@@ -71,11 +71,11 @@ def draw_igd_curve(igd_arr, id):
     plt.close()
 
 
-def draw_parato(archive, front, id):
+def draw_parato(archive, front, id, alpha=0.3, name="parato"):
     plot = Scatter()
-    plot.add(front, s=30, facecolors='none', edgecolors="#A2D1DC", alpha=0.3)
+    plot.add(front, s=30, facecolors='none', edgecolors="#A2D1DC", alpha=alpha)
     # plot.add(front, plot_type="line", color="black", linewidth=2)
     plot.add(archive, color="red")
-    plot.save(f'./exp/{id}/parato.png')
+    plot.save(f'./exp/{id}/{name}.png')
     # plot.fig.close()
 

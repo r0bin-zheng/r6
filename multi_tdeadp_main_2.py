@@ -16,12 +16,15 @@ from evolution.scalar import cluster_scalarization
 from evolution.selection import sel_scalar_dea, sel_scalar_dea_parato
 from evolution.multi_tdeadp_1 import scalar_dom_ea_dp as scalar_dom_ea_dp_1
 from evolution.multi_tdeadp_2 import scalar_dom_ea_dp as scalar_dom_ea_dp_2
+from evolution.multi_tdeadp_3 import scalar_dom_ea_dp as scalar_dom_ea_dp_3
+from evolution.multi_tdeadp_4 import scalar_dom_ea_dp as scalar_dom_ea_dp_4
 from evolution.algorithms import scalar_dom_ea_dp
 from evolution.counter import PerCounter
 from evolution.selection import pareto_scalar_nn_filter, nondominated_filter, pareto_nn_filter_2, pareto_nn_filter_3
 from evolution.ranking import non_dominated_ranking
 from evolution.dom import pareto_dominance
 from evolution.visualizer import draw_igd_curve, draw_parato
+from evolution.phase_strategy import PhaseStrategy, strategy_list, all_phase_list
 
 from learning.model_init import init_dom_nn_classifier, init_kriging_model, init_rbf_model, init_kpls_model
 from learning.model_update import update_dom_nn_classifier, update_kriging_model
@@ -38,6 +41,7 @@ parser = argparse.ArgumentParser(description="Process some integers.")
 parser.add_argument('--n_obj', type=int, required=True, help='Number of objects')
 parser.add_argument('--n_var', type=int, required=True, help='Number of variables')
 parser.add_argument('--alg', type=int, required=True, help='Algorithm choice')
+parser.add_argument('--phase_list', type=int, required=True, help='Algorithm phase list')
 parser.add_argument('--strategy', type=int, required=True, help='Algorithm phase strategy')
 parser.add_argument('--rate', type=float, required=True, help='first phase rate')
 parser.add_argument('--max_fe', type=int, required=True, help='Maximum number of function evaluations')
@@ -62,6 +66,7 @@ if not os.path.exists("exp/" + id):
 # ALG = 0 tdeap
 # ALG = 1 tdeap_main_1
 # ALG = 2 tdeap_main_2
+# ALG = 3 tdeap_main_3, use epsilon-dominance and theta-dominance
 ALG = args.alg
 
 n_var = args.n_var
@@ -71,7 +76,7 @@ problem = get_problem(args.problem, n_var=n_var, n_obj=n_obj)  # define a proble
 _problem = get_problem_pymoo(problem.name, n_var=problem.n_var, n_obj=problem.n_obj)
 
 print(problem.name)
-print(_problem.name)
+# print(_problem.name)
 
 # print("problem dim", problem.n_var)
 # print("problem xl", problem.xl)
@@ -110,11 +115,14 @@ WINDOW_SIZE = 11 * problem.n_var + 24      # the maximum number of solutions use
 CATEGORY_SIZE = 300                        # the maximum size in each category
 RATE = args.rate                           # the rate of first phase
 
-# 0：global
-# 1: local
-# 2: global + local
-# 3: local + global
+# 1-rate 2-one time 3-continuous
 STRATEGY = args.strategy
+
+# 0-local+global 1-global+local
+phase_list_idx = args.phase_list
+phase_list = all_phase_list[phase_list_idx]
+
+ps = PhaseStrategy(phase_list_idx, change_strategy=STRATEGY, rate=RATE, max_evaluations=(MAX_EVALUATIONS-INIT_SIZE))
 
 print("*" * 80)
 print(f"ID: {args.id}")
@@ -206,6 +214,8 @@ toolbox.register("filter_parato", pareto_nn_filter_3, device=device, ref_points=
 
 # toolbox.register("filter_local", nondominated_filter)
 
+toolbox.register("next", ps.next)
+
 # *****************************************************************************************
 
 # 执行算法
@@ -219,6 +229,10 @@ elif ALG == 1:
     archive, archive_arr = scalar_dom_ea_dp_1(INIT_SIZE, toolbox, MU, LAMBDA, MAX_EVALUATIONS, category_size=CATEGORY_SIZE, rate=RATE)
 elif ALG == 2:
     archive, archive_arr = scalar_dom_ea_dp_2(INIT_SIZE, toolbox, MU, LAMBDA, MAX_EVALUATIONS, category_size=CATEGORY_SIZE, rate=RATE, strategy=STRATEGY)
+elif ALG == 3:
+    archive, archive_arr = scalar_dom_ea_dp_3(INIT_SIZE, toolbox, MU, LAMBDA, MAX_EVALUATIONS, category_size=CATEGORY_SIZE, rate=RATE, strategy=STRATEGY)
+elif ALG == 4:
+    archive, archive_arr = scalar_dom_ea_dp_4(INIT_SIZE, toolbox, MU, LAMBDA, MAX_EVALUATIONS, category_size=CATEGORY_SIZE)
 
 end_time = time.time()
 
@@ -260,14 +274,19 @@ with open(f'./exp/{id}/result.txt', 'w') as f:
     }
 
     f.write(f"ID: {id}\n\n")
+
+    f.write(f"-------------------------Problem-------------------------\n")
     f.write(f"Problem: {problem.name}\n")
     f.write(f"Number of objects: {args.n_obj}\n")
     f.write(f"Number of variables: {args.n_var}\n\n")
+    f.write(f"-------------------------Algorithm-------------------------\n")
     f.write(f"Algorithm choice: {args.alg}\n")
-    f.write(f"Algorithm phase strategy: {strategy_str[args.strategy]}\n")
+    f.write(f"Phase list: {phase_list}\n")
+    f.write(f"Phase strategy: {strategy_list[STRATEGY]}\n")
     f.write(f"First phase rate: {RATE}\n")
     f.write(f"Population size: {MU}\n")
     f.write(f"Maximum number of function evaluations: {args.max_fe}\n\n")
+    f.write(f"-------------------------Result-------------------------\n")
     f.write(f"IGD: {igd}\n")
     f.write(f"GD: {gd}\n")
     f.write(f"HV: {hv}\n")
@@ -296,17 +315,8 @@ with open(f'./exp/{id}/igd.txt', 'w') as f:
         f.write(str(i) + '\n')
 draw_igd_curve(igd_arr, id)
 
-# draw Scatter Plot
-# if problem.n_obj == 2:
-#     front = _problem.pareto_front()
-#     draw_parato(np.array(non_dom_solutions_y), front, id)
-# elif problem.n_obj == 3:
-#     success_front = True
-#     try:
-#         ref_dirs = get_reference_directions("uniform", 3, n_partitions=12)
-#         front = _problem.pareto_front(ref_dirs=ref_dirs)
-#     except:
-#         success_front = False
-#     if success_front == False:
-#         front = _problem.pareto_front()
-draw_parato(np.array(non_dom_solutions_y), front, id)
+if problem.name == "dtlz7":
+    alpha = 0.1
+else:
+    alpha = 0.3
+draw_parato(np.array(non_dom_solutions_y), front, id, alpha=alpha)

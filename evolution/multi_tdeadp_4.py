@@ -1,8 +1,12 @@
-from evolution.dom import scalar_dominance
+from evolution.dom import scalar_dominance, pareto_dominance, epsilon_dominance
 from evolution.utils import *
+from evolution.ranking import non_dominated_ranking
+from problems.metrics import get_igd, get_igd_pymoo
+
+import numpy as np
+
 
 # Main loop of Theta-DEA-DP
-
 # 主循环
 def scalar_dom_ea_dp(init_size, toolbox, mu, lambda_, max_evaluations,
                      category_size=300, f_min=None, f_max=None):
@@ -35,30 +39,50 @@ def scalar_dom_ea_dp(init_size, toolbox, mu, lambda_, max_evaluations,
     p_rel_map, s_rel_map = init_dom_rel_map(max_evaluations)
 
     print("Initiating Pareto-Net:")
-    p_model = toolbox.init_pareto_model(archive, p_rel_map, pareto_dominance)  # init Pareto-Net
+    p_model = toolbox.init_pareto_model(archive, p_rel_map, epsilon_dominance)  # init Pareto-Net
 
     print("Initiating Theta-Net:")
     s_model = toolbox.init_scalar_model(archive, s_rel_map, scalar_dominance)  # init Theta-Net
 
-    none_time = 0
-    max_none_time = 30
+    # print("p_rel_map", p_rel_map)
+    # print("s_rel_map", s_rel_map)
+
+    global_flag = toolbox.next() == "global"
+    run_time = max_evaluations - evaluations
+    prev_eval = evaluations
+    repeat = 0
+    success = True
 
     while evaluations < max_evaluations:
-        print("Eval: ", evaluations)
+        if evaluations == prev_eval:
+            repeat += 1
+            if repeat == 50:
+                success = False
+                break
+        else:
+            repeat = 0
+            prev_eval = evaluations
+
+        print("Eval: " + str(evaluations) + ", go " + ("global" if global_flag else "local") + " search.")
 
         offsprings = toolbox.variation(pop, lambda_) # produce offspring using genetic operations
         toolbox.normalize_variables(offsprings)
 
-        # use two-stage preselection to select a solution for function evaluation
-        individual = toolbox.filter(offsprings, rep_individuals, nd_rep_individuals, p_model, s_model, category_size, evalTimes=evaluations)
+        if global_flag:
+            # use two-stage preselection to select a solution for function evaluation
+            individual = toolbox.filter(offsprings, rep_individuals, nd_rep_individuals, p_model, s_model, category_size, evalTimes=evaluations)      
+        else:
+            individual = toolbox.filter_parato(offsprings, rep_individuals, nd_rep_individuals, p_model, s_model, category_size, evalTimes=evaluations)   
+
 
         if individual is None:
-            none_time += 1
-            if none_time > max_none_time:
-                print("No solution is selected for evaluation, the algorithm is terminated.")
-                break
+            print("No solution is selected, go to next iteration.")
+            global_flag = toolbox.next(False) == "global"
             continue
+        else:
+            global_flag = toolbox.next(True) == "global"
 
+        # 评估新个体的目标值，以及在聚类中的scalar_dist
         full_evaluate([individual], toolbox, f_min, f_max)  # evaluate the selected solution
         evaluations += 1
 
@@ -74,10 +98,10 @@ def scalar_dom_ea_dp(init_size, toolbox, mu, lambda_, max_evaluations,
         # update Pareto-Net
         if p_model is None:
             print("Initiating Pareto-Net:")
-            p_model = toolbox.init_pareto_model(archive, p_rel_map, pareto_dominance)
+            p_model = toolbox.init_pareto_model(archive, p_rel_map, epsilon_dominance)
         else:
             print("Pareto-Net is updating:")
-            toolbox.update_pareto_model(p_model, archive, p_rel_map, pareto_dominance)
+            toolbox.update_pareto_model(p_model, archive, p_rel_map, epsilon_dominance)
 
         # update Theta-Net
         if s_model is None:
@@ -94,10 +118,10 @@ def scalar_dom_ea_dp(init_size, toolbox, mu, lambda_, max_evaluations,
         print("Non-dominated ones among scalar (theta) representative solutions:")
         for ind in nd_rep_individuals.values():
             print(ind.fitness.values)
-        
+
         # save archive_data
         archive_data.append(archive.copy())
         
         print("*" * 80)
 
-    return archive, archive_data
+    return archive, archive_data, success

@@ -44,9 +44,6 @@ def pareto_scalar_nn_filter(offsprings, rep_individuals, nd_rep_individuals,
             best_ind = select_best_individual(p_offs, p_net, s_net, device)
         else:
             print("No theta or Pareto dominates")
-            # print("p_rep_ind: ", p_rep_ind.fitness.values)
-            # print("s_rep_ind: ", s_rep_ind.fitness.values)
-            # print("offsprings: ", offsprings)
             best_ind = None
     else:
         print("No theta rep ind")
@@ -56,7 +53,6 @@ def pareto_scalar_nn_filter(offsprings, rep_individuals, nd_rep_individuals,
         if distinct_offs:
             best_ind = select_best_individual(distinct_offs, p_net, s_net, device)
         else:
-            # print("offsprings: ", offsprings)
             best_ind = None
 
     if visualization:
@@ -80,7 +76,7 @@ def pareto_nn_filter_3(offsprings, rep_individuals, nd_rep_individuals,
     p_offs = find_candidates_2(nd_rep_individuals, offsprings, p_net, device, max_size)
     print("len of p_offs: ", len(p_offs))
 
-    if p_offs:
+    if p_offs and len(p_offs) > 0:
         print("Pareto dominates")
         best_ind = select_best_individual(p_offs, p_net, None, device)
     else:

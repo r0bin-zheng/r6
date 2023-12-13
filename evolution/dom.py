@@ -32,7 +32,16 @@ def scalar_dominance(ind1, ind2):
         raise TypeError("Scalar dominance comparison cannot be done "
                         "when either of two individuals has not been evaluated")
 
+
 # TODO：添加其他优势关系
+def epsilon_dominance(ind1, ind2, epsilon=0.1):
+    if ind1.fitness.valid and ind2.fitness.valid:
+        r = get_percentage_epsilon_dom_rel(ind1.fitness.wvalues, ind2.fitness.wvalues, epsilon)
+        return get_inverted_dom_rel(r)
+    else:
+        raise TypeError("Epsilon dominance comparison cannot be done "
+                        "when either of two individuals has not been evaluated")
+
 
 # 评估两个点之间的优势关系
 # 0 表示不可比，1 表示 ind1 优于 ind2，2 表示 ind2 优于 ind1
@@ -53,12 +62,49 @@ def get_pareto_dom_rel(values1, values2):
         return 2
     else:
         return 0
+    
+
+def get_epsilon_dom_rel(values1, values2, epsilon=0.1):
+    n1, n2 = 0, 0
+    for v1, v2 in zip(values1, values2):
+        if v1 < v2 - epsilon:
+            n1 += 1
+        elif v2 < v1 - epsilon:
+            n2 += 1
+
+        if n1 > 0 and n2 > 0:
+            return 0
+
+    if n2 == 0 and n1 > 0:
+        return 1
+    elif n1 == 0 and n2 > 0:
+        return 2
+    else:
+        return 0
+
+
+def get_percentage_epsilon_dom_rel(values1, values2, epsilon_percentage=0.1):
+    n1, n2 = 0, 0
+    for v1, v2 in zip(values1, values2):
+        epsilon = epsilon_percentage * max(abs(v1), abs(v2))
+        if v1 < v2 - epsilon:
+            n1 += 1
+        elif v2 < v1 - epsilon:
+            n2 += 1
+
+        if n1 > 0 and n2 > 0:
+            return 0
+
+    if n2 == 0 and n1 > 0:
+        return 1
+    elif n1 == 0 and n2 > 0:
+        return 2
+    else:
+        return 0
+
 
 # 将优势关系转换为相反的优势关系
 def get_inverted_dom_rel(r):
-
-    # print("get_inverted_dom_rel")
-
     return r if r == 0 else 3 - r
 
 
