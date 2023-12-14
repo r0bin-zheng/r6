@@ -81,4 +81,7 @@ class PhaseStrategy:
         
         self.cur_eval += 1
         return self.cur_phase
+    
+    def get_phases(self):
+        return self.phase_list
         

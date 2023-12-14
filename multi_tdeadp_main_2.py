@@ -31,26 +31,35 @@ from learning.model_update import update_dom_nn_classifier, update_kriging_model
 
 from problems.factory import get_problem, get_problem_pymoo
 from problems.rp import get_reference_points
-from problems.metrics import get_igd, get_igd_pymoo, get_gd_pymoo, get_hv_pymoo, get_gdplus_pymoo, get_igdplus_pymoo, get_pareto_front, get_igd_pf, get_gd_pf, get_hv_pf, get_gdplus_pf, get_igd_plus_pf 
+from problems.metrics import get_igd, get_igd_pymoo, get_gd_pymoo, get_hv_pymoo, get_gdplus_pymoo, get_igdplus_pymoo, get_pareto_front, get_igd_pf, get_gd_pf, get_hv_pf, get_gdplus_pf, get_igd_plus_pf
 from pymoo.util.ref_dirs import get_reference_directions
 
 
 # 初始化文件
 
-parser = argparse.ArgumentParser(description="Process some integers.")
-parser.add_argument('--n_obj', type=int, required=True, help='Number of objects')
-parser.add_argument('--n_var', type=int, required=True, help='Number of variables')
+parser = argparse.ArgumentParser(description="")
+parser.add_argument('--n_obj', type=int, required=True,
+                    help='Number of objects')
+parser.add_argument('--n_var', type=int, required=True,
+                    help='Number of variables')
 parser.add_argument('--alg', type=int, required=True, help='Algorithm choice')
-parser.add_argument('--phase_list', type=int, required=True, help='Algorithm phase list')
-parser.add_argument('--strategy', type=int, required=True, help='Algorithm phase strategy')
-parser.add_argument('--rate', type=float, required=True, help='first phase rate')
-parser.add_argument('--max_fe', type=int, required=True, help='Maximum number of function evaluations')
+parser.add_argument('--phase_list', type=int, required=True,
+                    help='Algorithm phase list')
+parser.add_argument('--strategy', type=int, required=True,
+                    help='Algorithm phase strategy')
+parser.add_argument('--rate', type=float, required=True,
+                    help='first phase rate')
+parser.add_argument('--max_fe', type=int, required=True,
+                    help='Maximum number of function evaluations')
 parser.add_argument('--problem', type=str, required=True, help='Problem name')
-parser.add_argument('--id', type=str, required=True, help='Exp id', default="0")
+parser.add_argument('--id', type=str, required=True,
+                    help='Exp id', default="0")
 args = parser.parse_args()
+
 
 def get_id():
     return time.strftime("%Y%m%d%H%M%S", time.localtime())
+
 
 if args.id == "0":
     id = get_id()
@@ -72,11 +81,12 @@ ALG = args.alg
 n_var = args.n_var
 n_obj = args.n_obj
 # dtlz1
-problem = get_problem(args.problem, n_var=n_var, n_obj=n_obj)  # define a problem to be solved
-_problem = get_problem_pymoo(problem.name, n_var=problem.n_var, n_obj=problem.n_obj)
+# define a problem to be solved
+problem = get_problem(args.problem, n_var=n_var, n_obj=n_obj)
+_problem = get_problem_pymoo(
+    problem.name, n_var=problem.n_var, n_obj=problem.n_obj)
 
 print(problem.name)
-# print(_problem.name)
 
 # print("problem dim", problem.n_var)
 # print("problem xl", problem.xl)
@@ -86,12 +96,14 @@ pf_path = "./pf/DTLZ1.2D.pf"     # the path to true Pareto front of the problem
 # pf_path = "../pf/ZDT1.2D.pf"
 # pf_path = "../pf/ZDT2.2D.pf"
 
-ref_points = get_reference_points(problem.n_obj)  # define a set of structured weight vectors
+# define a set of structured weight vectors
+ref_points = get_reference_points(problem.n_obj)
 
 MU = len(ref_points)  # population size
 INIT_SIZE = 11 * problem.n_var - 1  # the number of initial solutions
 
-MAX_EVALUATIONS = args.max_fe   # The maximum number of function evaluations, should be larger than INIT_SIZE
+# The maximum number of function evaluations, should be larger than INIT_SIZE
+MAX_EVALUATIONS = args.max_fe
 
 LAMBDA = 7000    # the number of offsprings
 CXPB = 1.0       # crossover probability
@@ -110,7 +122,8 @@ EPOCHS = 20             # epochs for initiating FNN
 BATCH_SIZE = 32         # min-batch size for training
 
 ACC_THR = 0.9           # threshold for accuracy
-WINDOW_SIZE = 11 * problem.n_var + 24      # the maximum number of solutions used in updating
+# the maximum number of solutions used in updating
+WINDOW_SIZE = 11 * problem.n_var + 24
 
 CATEGORY_SIZE = 300                        # the maximum size in each category
 RATE = args.rate                           # the rate of first phase
@@ -122,7 +135,8 @@ STRATEGY = args.strategy
 phase_list_idx = args.phase_list
 phase_list = all_phase_list[phase_list_idx]
 
-ps = PhaseStrategy(phase_list_idx, change_strategy=STRATEGY, rate=RATE, max_evaluations=(MAX_EVALUATIONS-INIT_SIZE))
+ps = PhaseStrategy(phase_list_idx, change_strategy=STRATEGY,
+                   rate=RATE, max_evaluations=(MAX_EVALUATIONS-INIT_SIZE))
 
 print("*" * 80)
 print(f"ID: {args.id}")
@@ -142,20 +156,23 @@ creator.create("Individual", list, fitness=creator.FitnessMin)
 toolbox = base.Toolbox()
 
 # customize the population initialization
-toolbox.register("population", lhs_init_population, list, creator.Individual, problem.xl, problem.xu)
+toolbox.register("population", lhs_init_population, list,
+                 creator.Individual, problem.xl, problem.xu)
 
 # customize the function evaluation
 toolbox.register("evaluate", problem.evaluate)
 
 # customize the crossover operator, SBX is used here
-toolbox.register("mate", tools.cxSimulatedBinaryBounded, low=list(problem.xl), up=list(problem.xu), eta=30.0)
+toolbox.register("mate", tools.cxSimulatedBinaryBounded,
+                 low=list(problem.xl), up=list(problem.xu), eta=30.0)
 
 # customize the mutation operator, polynomial mutation is used here
 toolbox.register("mutate", tools.mutPolynomialBounded, low=list(problem.xl), up=list(problem.xu), eta=20.0,
                  indpb=1.0 / problem.n_var)
 
 # customize the variation method for producing offsprings, genetic variation is used here
-toolbox.register("variation", random_genetic_variation, toolbox=toolbox, cxpb=CXPB, mutpb=MUTPB)
+toolbox.register("variation", random_genetic_variation,
+                 toolbox=toolbox, cxpb=CXPB, mutpb=MUTPB)
 
 # customize the survival selection
 toolbox.register("select", sel_scalar_dea)
@@ -164,11 +181,13 @@ toolbox.register("select", sel_scalar_dea)
 toolbox.register("select_local", sel_scalar_dea_parato)
 
 # the cluster operator in Theta-DEA
-toolbox.register("cluster_scalarization", cluster_scalarization, ref_points=ref_points)
+toolbox.register("cluster_scalarization",
+                 cluster_scalarization, ref_points=ref_points)
 
 
 # normalize the decision variables for training purpose
-toolbox.register("normalize_variables", var_normalization, low=problem.xl, up=problem.xu)
+toolbox.register("normalize_variables", var_normalization,
+                 low=problem.xl, up=problem.xu)
 
 
 # if GPU is available, use GPU, else use CPU
@@ -224,15 +243,20 @@ start_time = time.time()
 
 # run the algorithm and return all the evaluated solutions
 if ALG == 0:
-    archive, archive_arr = scalar_dom_ea_dp(INIT_SIZE, toolbox, MU, LAMBDA, MAX_EVALUATIONS, category_size=CATEGORY_SIZE)
+    archive, archive_arr = scalar_dom_ea_dp(
+        INIT_SIZE, toolbox, MU, LAMBDA, MAX_EVALUATIONS, category_size=CATEGORY_SIZE)
 elif ALG == 1:
-    archive, archive_arr = scalar_dom_ea_dp_1(INIT_SIZE, toolbox, MU, LAMBDA, MAX_EVALUATIONS, category_size=CATEGORY_SIZE, rate=RATE)
+    archive, archive_arr = scalar_dom_ea_dp_1(
+        INIT_SIZE, toolbox, MU, LAMBDA, MAX_EVALUATIONS, category_size=CATEGORY_SIZE, rate=RATE)
 elif ALG == 2:
-    archive, archive_arr = scalar_dom_ea_dp_2(INIT_SIZE, toolbox, MU, LAMBDA, MAX_EVALUATIONS, category_size=CATEGORY_SIZE, rate=RATE, strategy=STRATEGY)
+    archive, archive_arr = scalar_dom_ea_dp_2(
+        INIT_SIZE, toolbox, MU, LAMBDA, MAX_EVALUATIONS, category_size=CATEGORY_SIZE, rate=RATE, strategy=STRATEGY)
 elif ALG == 3:
-    archive, archive_arr = scalar_dom_ea_dp_3(INIT_SIZE, toolbox, MU, LAMBDA, MAX_EVALUATIONS, category_size=CATEGORY_SIZE, rate=RATE, strategy=STRATEGY)
+    archive, archive_arr = scalar_dom_ea_dp_3(
+        INIT_SIZE, toolbox, MU, LAMBDA, MAX_EVALUATIONS, category_size=CATEGORY_SIZE, rate=RATE, strategy=STRATEGY)
 elif ALG == 4:
-    archive, archive_arr = scalar_dom_ea_dp_4(INIT_SIZE, toolbox, MU, LAMBDA, MAX_EVALUATIONS, category_size=CATEGORY_SIZE)
+    archive, archive_arr = scalar_dom_ea_dp_4(
+        INIT_SIZE, toolbox, MU, LAMBDA, MAX_EVALUATIONS, category_size=CATEGORY_SIZE)
 
 end_time = time.time()
 
@@ -247,8 +271,8 @@ front = get_pareto_front(_problem)
 # compute performance indicator
 # igd = get_igd(non_dom_solutions, pf_path)
 igd = get_igd_pf(non_dom_solutions, front)
-gd  = get_gd_pf(non_dom_solutions, front)
-hv  = get_hv_pf(non_dom_solutions, front)
+gd = get_gd_pf(non_dom_solutions, front)
+hv = get_hv_pf(non_dom_solutions, front)
 
 print("*" * 80)
 print("IGD: " + str(igd))

@@ -35,7 +35,7 @@ while IFS= read -r line; do
         # 如果文件夹创建成功，则执行命令并重定向输出到该文件夹的 output.txt
         if [[ -d "exp/$exp_id" ]]; then
             # 将执行时间、完整命令、id记录到日志log.txt
-            echo "$current_data_time_fmt $command >> exp/$exp_id/output.txt" >> "log.txt"
+            echo "$current_data_time_fmt $command" >> "log.txt"
             eval "$command"
         else
             echo "Failed to create directory exp/${exp_id}"

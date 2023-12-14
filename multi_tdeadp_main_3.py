@@ -31,7 +31,7 @@ from learning.model_update import update_dom_nn_classifier, update_kriging_model
 
 from problems.factory import get_problem, get_problem_pymoo
 from problems.rp import get_reference_points
-from problems.metrics import get_igd, get_igd_pymoo, get_gd_pymoo, get_hv_pymoo, get_gdplus_pymoo, get_igdplus_pymoo, get_pareto_front, get_igd_pf, get_gd_pf, get_hv_pf, get_gdplus_pf, get_igd_plus_pf 
+from problems.metrics import get_igd, get_igd_pymoo, get_gd_pymoo, get_hv_pymoo, get_gdplus_pymoo, get_igdplus_pymoo, get_pareto_front, get_igd_pf, get_gd_pf, get_hv_pf, get_gdplus_pf, get_igd_plus_pf
 from pymoo.util.ref_dirs import get_reference_directions
 
 
@@ -39,6 +39,7 @@ EXP_SAVE_PATH = "./exp/"
 
 
 class Exp:
+    """Experiment class"""
     def __init__(self, id, n_var, n_obj, alg, max_fe, problem, phase_list, strategy, rate):
 
         # exp info
@@ -72,7 +73,7 @@ class Exp:
         self.end_time = time.time()
         self.get_performance_indicator()
         self.save()
-    
+
     def path_init(self):
         if not os.path.exists(self.path):
             os.mkdir(self.path)
@@ -80,16 +81,20 @@ class Exp:
     def toolbox_init(self):
 
         # problem
-        self.problem = get_problem(self.problem_name, n_var=self.n_var, n_obj=self.n_obj)  # define a problem to be solved
-        self._problem = get_problem_pymoo(self.problem_name, n_var=self.problem.n_var, n_obj=self.problem.n_obj) # problem for pymoo
+        # define a problem to be solved
+        self.problem = get_problem(
+            self.problem_name, n_var=self.n_var, n_obj=self.n_obj)
+        self._problem = get_problem_pymoo(
+            self.problem_name, n_var=self.problem.n_var, n_obj=self.problem.n_obj)  # problem for pymoo
 
         # ref_points
-        self.ref_points = get_reference_points(self.problem.n_obj)  # define a set of structured weight vectors
+        # define a set of structured weight vectors
+        self.ref_points = get_reference_points(self.problem.n_obj)
 
         # alg args
         self.mu = len(self.ref_points)  # population size
         self.init_size = 11 * self.problem.n_var - 1  # the number of initial solutions
-        self.lambda_ = 7000    # the number of offsprings
+        self.lambda_ = 1000    # the number of offsprings
         self.cxpb = 1.0       # crossover probability
         self.mutpb = 1.0      # mutation probability
         self.dic = 30                    # distribution index for crossover
@@ -102,31 +107,38 @@ class Exp:
         self.epochs = 20             # epochs for initiating FNN
         self.batch_size = 32         # min-batch size for training
         self.acc_thr = 0.9           # threshold for accuracy
-        self.window_size = 11 * self.problem.n_var + 24      # the maximum number of solutions used in updating
-        self.category_size = 300                        # the maximum size in each category
-        self.ps = PhaseStrategy(self.phase_list, change_strategy=self.strategy, rate=self.rate, max_evaluations=(self.max_fe-self.init_size))
+        # the maximum number of solutions used in updating
+        self.window_size = 11 * self.problem.n_var + 24
+        # the maximum size in each category
+        self.category_size = 300
+        self.ps = PhaseStrategy(self.phase_list, change_strategy=self.strategy,
+                                rate=self.rate, max_evaluations=(self.max_fe-self.init_size))
 
         # create types for the problem, refer to DEAP documentation
-        creator.create("FitnessMin", base.Fitness, weights=(-1.0,) * self.problem.n_obj)
+        creator.create("FitnessMin", base.Fitness,
+                       weights=(-1.0,) * self.problem.n_obj)
         creator.create("Individual", list, fitness=creator.FitnessMin)
 
         self.toolbox = base.Toolbox()
 
         # customize the population initialization
-        self.toolbox.register("population", lhs_init_population, list, creator.Individual, self.problem.xl, self.problem.xu)
+        self.toolbox.register("population", lhs_init_population,
+                              list, creator.Individual, self.problem.xl, self.problem.xu)
 
         # customize the function evaluation
         self.toolbox.register("evaluate", self.problem.evaluate)
 
         # customize the crossover operator, SBX is used here
-        self.toolbox.register("mate", tools.cxSimulatedBinaryBounded, low=list(self.problem.xl), up=list(self.problem.xu), eta=30.0)
+        self.toolbox.register("mate", tools.cxSimulatedBinaryBounded, low=list(
+            self.problem.xl), up=list(self.problem.xu), eta=30.0)
 
         # customize the mutation operator, polynomial mutation is used here
         self.toolbox.register("mutate", tools.mutPolynomialBounded, low=list(self.problem.xl), up=list(self.problem.xu), eta=20.0,
-                        indpb=1.0 / self.problem.n_var)
-        
+                              indpb=1.0 / self.problem.n_var)
+
         # customize the variation method for producing offsprings, genetic variation is used here
-        self.toolbox.register("variation", random_genetic_variation, toolbox=self.toolbox, cxpb=self.cxpb, mutpb=self.mutpb)
+        self.toolbox.register("variation", random_genetic_variation,
+                              toolbox=self.toolbox, cxpb=self.cxpb, mutpb=self.mutpb)
 
         # customize the survival selection
         self.toolbox.register("select", sel_scalar_dea)
@@ -135,42 +147,45 @@ class Exp:
         self.toolbox.register("select_local", sel_scalar_dea_parato)
 
         # the cluster operator in Theta-DEA
-        self.toolbox.register("cluster_scalarization", cluster_scalarization, ref_points=self.ref_points)
+        self.toolbox.register("cluster_scalarization",
+                              cluster_scalarization, ref_points=self.ref_points)
 
         # normalize the decision variables for training purpose
-        self.toolbox.register("normalize_variables", var_normalization, low=self.problem.xl, up=self.problem.xu)
+        self.toolbox.register(
+            "normalize_variables", var_normalization, low=self.problem.xl, up=self.problem.xu)
 
         # if GPU is available, use GPU, else use CPU
-        self.device = torch.device('cuda:3' if torch.cuda.is_available() else 'cpu')
+        self.device = torch.device(
+            'cuda:3' if torch.cuda.is_available() else 'cpu')
 
         # customize the initiation of Pareto-Net
         self.toolbox.register("init_pareto_model", init_dom_nn_classifier,
-                        device=self.device, input_size=2 * self.problem.n_var, hidden_size=self.hidden_size,
-                        num_hidden_layers=self.num_layers, batch_size=self.batch_size, epochs=self.epochs,
-                        activation='relu', lr=self.lr, weight_decay=self.wdc)
-        
+                              device=self.device, input_size=2 * self.problem.n_var, hidden_size=self.hidden_size,
+                              num_hidden_layers=self.num_layers, batch_size=self.batch_size, epochs=self.epochs,
+                              activation='relu', lr=self.lr, weight_decay=self.wdc)
+
         # customize the initiation of Theta-Net
         self.toolbox.register("init_scalar_model", init_dom_nn_classifier,
-                        device=self.device, input_size=2 * self.problem.n_var, hidden_size=self.hidden_size,
-                        num_hidden_layers=self.num_layers, batch_size=self.batch_size, epochs=self.epochs,
-                        activation='relu', lr=self.lr, weight_decay=self.wdc)
-        
+                              device=self.device, input_size=2 * self.problem.n_var, hidden_size=self.hidden_size,
+                              num_hidden_layers=self.num_layers, batch_size=self.batch_size, epochs=self.epochs,
+                              activation='relu', lr=self.lr, weight_decay=self.wdc)
+
         # customize the updating of Pareto-Net
         self.toolbox.register("update_pareto_model", update_dom_nn_classifier, device=self.device, max_window_size=self.window_size,
-                        max_adjust_epochs=self.epochs, batch_size=self.batch_size, lr=self.lr, acc_thr=self.acc_thr, weight_decay=self.wdc)
-        
+                              max_adjust_epochs=self.epochs, batch_size=self.batch_size, lr=self.lr, acc_thr=self.acc_thr, weight_decay=self.wdc)
+
         # customize the updating of Theta-Net
         self.toolbox.register("update_scalar_model", update_dom_nn_classifier, device=self.device, max_window_size=self.window_size,
-                        max_adjust_epochs=self.epochs, batch_size=self.batch_size, lr=self.lr, acc_thr=self.acc_thr, weight_decay=self.wdc)
-        
+                              max_adjust_epochs=self.epochs, batch_size=self.batch_size, lr=self.lr, acc_thr=self.acc_thr, weight_decay=self.wdc)
+
         # two-stage preselection,
         # if just want to obtain solutions, disable "visualization" since it will slow the program
         self.toolbox.register("filter", pareto_scalar_nn_filter, device=self.device, ref_points=self.ref_points,
-                        counter=PerCounter(len(self.ref_points)), toolbox=self.toolbox, visualization=True, id=self.id)
-        
+                              counter=PerCounter(len(self.ref_points)), toolbox=self.toolbox, visualization=True, id=self.id)
+
         # self.toolbox.register("filter_parato", pareto_nn_filter_2, device=self.device)
         self.toolbox.register("filter_parato", pareto_nn_filter_3, device=self.device, ref_points=self.ref_points,
-                        counter=PerCounter(len(self.ref_points)), toolbox=self.toolbox, visualization=True, id=self.id)
+                              counter=PerCounter(len(self.ref_points)), toolbox=self.toolbox, visualization=True, id=self.id)
 
         self.toolbox.register("next", self.ps.next)
 
@@ -193,13 +208,15 @@ class Exp:
         print("--------------------------------------Output--------------------------------------")
 
     def get_performance_indicator(self):
-        self.non_dom_solutions = non_dominated_ranking(self.archive, pareto_dominance)[0]
-        self.non_dom_solutions_y = self.toolbox.evaluate(self.non_dom_solutions)
+        self.non_dom_solutions = non_dominated_ranking(
+            self.archive, pareto_dominance)[0]
+        self.non_dom_solutions_y = self.toolbox.evaluate(
+            self.non_dom_solutions)
         self.front = get_pareto_front(self._problem)
 
         self.igd = get_igd_pf(self.non_dom_solutions, self.front)
-        self.gd  = get_gd_pf(self.non_dom_solutions, self.front)
-        self.hv  = get_hv_pf(self.non_dom_solutions, self.front)
+        self.gd = get_gd_pf(self.non_dom_solutions, self.front)
+        self.hv = get_hv_pf(self.non_dom_solutions, self.front)
         self.time_cost = self.end_time - self.start_time
 
         print("*" * 80)
@@ -218,34 +235,39 @@ class Exp:
 
     def save_result(self):
         with open(self.path + '/result.txt', 'w') as f:
-            
-            str_time = time.strftime("%Y-%m-%d %H:%M:%S", self.time)
 
-            f.write(f"--------------------------------------Info--------------------------------------\n")
+            str_time = time.strftime("%Y-%m-%d %H:%M:%S", self.time)
+            phases = self.ps.get_phases()
+
+            f.write(
+                f"--------------------------------------Info--------------------------------------\n")
             f.write(f"ID: {self.id}\n")
             f.write(f"Path: {self.path}\n")
             f.write(f"Time: {str_time}\n")
             f.write(f"Success: {self.success}\n")
-    
-            f.write(f"--------------------------------------Problem--------------------------------------\n")
+
+            f.write(
+                f"--------------------------------------Problem--------------------------------------\n")
             f.write(f"Problem: {self.problem_name}\n")
             f.write(f"Number of objects: {self.n_obj}\n")
             f.write(f"Number of variables: {self.n_var}\n")
-    
-            f.write(f"--------------------------------------Algorithm--------------------------------------\n")
+
+            f.write(
+                f"--------------------------------------Algorithm--------------------------------------\n")
             f.write(f"Algorithm choice: {self.alg}\n")
-            f.write(f"Phase list: {self.phase_list}\n")
+            f.write(f"Phase list: {self.phase_list} ({phases})\n")
             f.write(f"Phase strategy: {strategy_list[self.strategy]}\n")
             f.write(f"First phase rate: {self.rate}\n")
             f.write(f"Population size: {self.mu}\n")
             f.write(f"Maximum number of function evaluations: {self.max_fe}\n")
-    
-            f.write(f"--------------------------------------Result--------------------------------------\n")
+
+            f.write(
+                f"--------------------------------------Result--------------------------------------\n")
             f.write(f"IGD: {self.igd}\n")
             f.write(f"GD: {self.gd}\n")
             f.write(f"HV: {self.hv}\n")
             f.write(f"Time cost: {self.end_time - self.start_time}\n\n")
-    
+
             f.write(f"non_dom_solutions:\n")
             for item in self.non_dom_solutions:
                 f.write(str(item) + '\n')
@@ -261,18 +283,20 @@ class Exp:
             if len(igd_arr) == 1:
                 for i in range(self.init_size - 1):
                     igd_arr.append(igd_arr[0])
-        
+
         with open(self.path + '/igd.txt', 'w') as f:
             for i in igd_arr:
                 f.write(str(i) + '\n')
-        
+
         draw_igd_curve(igd_arr, self.id)
 
     def draw_parato(self):
         archive_y = self.toolbox.evaluate(self.archive)
         if self.problem.n_obj == 2 or self.problem.n_obj == 3:
-            draw_parato(np.array(archive_y), self.front, self.id, alpha=self.alpha, name="archive")
-            draw_parato(np.array(self.non_dom_solutions_y), self.front, self.id, alpha=self.alpha, name="non_dom_solutions")
+            draw_parato(np.array(archive_y), self.front, self.id,
+                        alpha=self.alpha, name="archive")
+            draw_parato(np.array(self.non_dom_solutions_y), self.front,
+                        self.id, alpha=self.alpha, name="non_dom_solutions")
 
     def __run__(self):
         success = True
@@ -312,20 +336,26 @@ def get_id():
 
 
 parser = argparse.ArgumentParser(description="")
-parser.add_argument('--n_obj', type=int, required=True, help='Number of objects')
-parser.add_argument('--n_var', type=int, required=True, help='Number of variables')
+parser.add_argument('--n_obj', type=int, required=True,
+                    help='Number of objects')
+parser.add_argument('--n_var', type=int, required=True,
+                    help='Number of variables')
 parser.add_argument('--alg', type=int, required=True, help='Algorithm choice')
-parser.add_argument('--phase_list', type=int, required=True, help='Algorithm phase list')
-parser.add_argument('--strategy', type=int, required=True, help='Algorithm phase strategy')
-parser.add_argument('--rate', type=float, required=True, help='first phase rate')
-parser.add_argument('--max_fe', type=int, required=True, help='Maximum number of function evaluations')
+parser.add_argument('--phase_list', type=int, required=True,
+                    help='Algorithm phase list')
+parser.add_argument('--strategy', type=int, required=True,
+                    help='Algorithm phase strategy')
+parser.add_argument('--rate', type=float, required=True,
+                    help='first phase rate')
+parser.add_argument('--max_fe', type=int, required=True,
+                    help='Maximum number of function evaluations')
 parser.add_argument('--problem', type=str, required=True, help='Problem name')
-parser.add_argument('--id', type=str, required=True, help='Exp id', default="0")
+parser.add_argument('--id', type=str, required=True,
+                    help='Exp id', default="0")
 args = parser.parse_args()
 
-id = args.id if args.id != "0" else get_id()
-exp = Exp(id=id, n_var=args.n_var, n_obj=args.n_obj, alg=args.alg, max_fe=args.max_fe, problem=args.problem,
+id_ = args.id if args.id != "0" else get_id()
+exp = Exp(id=id_, n_var=args.n_var, n_obj=args.n_obj, alg=args.alg, max_fe=args.max_fe, problem=args.problem,
           phase_list=args.phase_list, strategy=args.strategy, rate=args.rate)
 exp.init()
 exp.run()
-

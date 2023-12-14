@@ -1,3 +1,4 @@
+import os
 import torch
 
 import time
@@ -31,26 +32,31 @@ from learning.model_update import update_dom_nn_classifier, update_kriging_model
 # ALG = 0 tdeap
 # ALG = 1 tdeap_main_1
 # ALG = 2 tdeap_main_2
-ALG = 2 
+ALG = 2
+
 
 def get_id():
     return time.strftime("%Y%m%d%H%M%S", time.localtime())
+
 
 # 生成id
 id = get_id()
 
 # 在当前目录下创建文件夹，名称为id
-import os
 os.mkdir(id)
 
 n_var = 2
 n_obj = 2
-problem = get_problem("dtlz1", n_var=n_var, n_obj=n_obj)  # define a problem to be solved
-#problem = get_problem("zdt1", n_var=10)
-#problem = get_problem("zdt2", n_var=10)
+# define a problem to be solved
+problem = get_problem("dtlz1", n_var=n_var, n_obj=n_obj)
+# problem = get_problem("zdt1", n_var=10)
+# problem = get_problem("zdt2", n_var=10)
 
 # problem = get_problem_pymoo("dtlz1", n_var=6, n_obj=5)
-_problem = get_problem_pymoo(problem.name, n_var=problem.n_var, n_obj=problem.n_obj)
+_problem = get_problem_pymoo(
+    problem.name,
+    n_var=problem.n_var,
+    n_obj=problem.n_obj)
 
 print("problem dim", problem.n_var)
 print("problem xl", problem.xl)
@@ -60,12 +66,14 @@ pf_path = "./pf/DTLZ1.2D.pf"     # the path to true Pareto front of the problem
 # pf_path = "../pf/ZDT1.2D.pf"
 # pf_path = "../pf/ZDT2.2D.pf"
 
-ref_points = get_reference_points(problem.n_obj)  # define a set of structured weight vectors
+# define a set of structured weight vectors
+ref_points = get_reference_points(problem.n_obj)
 
 MU = len(ref_points)  # population size
 INIT_SIZE = 11 * problem.n_var - 1  # the number of initial solutions
 
-MAX_EVALUATIONS = 500   # The maximum number of function evaluations, should be larger than INIT_SIZE
+# The maximum number of function evaluations, should be larger than INIT_SIZE
+MAX_EVALUATIONS = 500
 
 
 LAMBDA = 7000    # the number of offsprings
@@ -86,7 +94,8 @@ BATCH_SIZE = 32         # min-batch size for training
 
 
 ACC_THR = 0.9           # threshold for accuracy
-WINDOW_SIZE = 11 * problem.n_var + 24      # the maximum number of solutions used in updating
+# the maximum number of solutions used in updating
+WINDOW_SIZE = 11 * problem.n_var + 24
 
 CATEGORY_SIZE = 300                        # the maximum size in each category
 
@@ -97,20 +106,35 @@ creator.create("Individual", list, fitness=creator.FitnessMin)
 toolbox = base.Toolbox()
 
 # customize the population initialization
-toolbox.register("population", lhs_init_population, list, creator.Individual, problem.xl, problem.xu)
+toolbox.register(
+    "population",
+    lhs_init_population,
+    list,
+    creator.Individual,
+    problem.xl,
+    problem.xu)
 
 # customize the function evaluation
 toolbox.register("evaluate", problem.evaluate)
 
 # customize the crossover operator, SBX is used here
-toolbox.register("mate", tools.cxSimulatedBinaryBounded, low=list(problem.xl), up=list(problem.xu), eta=30.0)
+toolbox.register(
+    "mate", tools.cxSimulatedBinaryBounded, low=list(
+        problem.xl), up=list(
+            problem.xu), eta=30.0)
 
 # customize the mutation operator, polynomial mutation is used here
 toolbox.register("mutate", tools.mutPolynomialBounded, low=list(problem.xl), up=list(problem.xu), eta=20.0,
                  indpb=1.0 / problem.n_var)
 
-# customize the variation method for producing offsprings, genetic variation is used here
-toolbox.register("variation", random_genetic_variation, toolbox=toolbox, cxpb=CXPB, mutpb=MUTPB)
+# customize the variation method for producing offsprings, genetic
+# variation is used here
+toolbox.register(
+    "variation",
+    random_genetic_variation,
+    toolbox=toolbox,
+    cxpb=CXPB,
+    mutpb=MUTPB)
 
 # customize the survival selection
 toolbox.register("select", sel_scalar_dea)
@@ -119,11 +143,18 @@ toolbox.register("select", sel_scalar_dea)
 toolbox.register("select_local", sel_scalar_dea_parato)
 
 # the cluster operator in Theta-DEA
-toolbox.register("cluster_scalarization", cluster_scalarization, ref_points=ref_points)
+toolbox.register(
+    "cluster_scalarization",
+    cluster_scalarization,
+    ref_points=ref_points)
 
 
 # normalize the decision variables for training purpose
-toolbox.register("normalize_variables", var_normalization, low=problem.xl, up=problem.xu)
+toolbox.register(
+    "normalize_variables",
+    var_normalization,
+    low=problem.xl,
+    up=problem.xu)
 
 
 # if GPU is available, use GPU, else use CPU
@@ -159,7 +190,8 @@ toolbox.register("update_scalar_model", update_dom_nn_classifier, device=device,
                  max_adjust_epochs=EPOCHS, batch_size=BATCH_SIZE, lr=LR, acc_thr=ACC_THR, weight_decay=WDC)
 
 # two-stage preselection,
-# if just want to obtain solutions, disable "visualization" since it will slow the program
+# if just want to obtain solutions, disable "visualization" since it will
+# slow the program
 toolbox.register("filter", pareto_scalar_nn_filter, device=device, ref_points=ref_points,
                  counter=PerCounter(len(ref_points)), toolbox=toolbox, visualization=True, id=id)
 
@@ -173,11 +205,14 @@ start_time = time.time()
 
 # run the algorithm and return all the evaluated solutions
 if ALG == 0:
-    archive, archive_arr = scalar_dom_ea_dp(INIT_SIZE, toolbox, MU, LAMBDA, MAX_EVALUATIONS, category_size=CATEGORY_SIZE)
+    archive, archive_arr = scalar_dom_ea_dp(
+        INIT_SIZE, toolbox, MU, LAMBDA, MAX_EVALUATIONS, category_size=CATEGORY_SIZE)
 elif ALG == 1:
-    archive, archive_arr = scalar_dom_ea_dp_1(INIT_SIZE, toolbox, MU, LAMBDA, MAX_EVALUATIONS, category_size=CATEGORY_SIZE)
+    archive, archive_arr = scalar_dom_ea_dp_1(
+        INIT_SIZE, toolbox, MU, LAMBDA, MAX_EVALUATIONS, category_size=CATEGORY_SIZE)
 elif ALG == 2:
-    archive, archive_arr = scalar_dom_ea_dp_2(INIT_SIZE, toolbox, MU, LAMBDA, MAX_EVALUATIONS, category_size=CATEGORY_SIZE)
+    archive, archive_arr = scalar_dom_ea_dp_2(
+        INIT_SIZE, toolbox, MU, LAMBDA, MAX_EVALUATIONS, category_size=CATEGORY_SIZE)
 
 end_time = time.time()
 
