@@ -1,11 +1,14 @@
 from evolution.dom import scalar_dominance
 from evolution.utils import *
+from evolution.common import Timer
 
 # Main loop of Theta-DEA-DP
 
 # 主循环
 def scalar_dom_ea_dp(init_size, toolbox, mu, lambda_, max_evaluations,
                      category_size=300, f_min=None, f_max=None):
+    
+    timer_net = Timer()
     
     # 初始化种群
     pop = toolbox.population(init_size)   # initialize the population
@@ -35,10 +38,10 @@ def scalar_dom_ea_dp(init_size, toolbox, mu, lambda_, max_evaluations,
     p_rel_map, s_rel_map = init_dom_rel_map(max_evaluations)
 
     print("Initiating Pareto-Net:")
-    p_model = toolbox.init_pareto_model(archive, p_rel_map, pareto_dominance)  # init Pareto-Net
+    p_model = toolbox.init_pareto_model(archive, p_rel_map, pareto_dominance, timer=timer_net)  # init Pareto-Net
 
     print("Initiating Theta-Net:")
-    s_model = toolbox.init_scalar_model(archive, s_rel_map, scalar_dominance)  # init Theta-Net
+    s_model = toolbox.init_scalar_model(archive, s_rel_map, scalar_dominance, timer=timer_net)  # init Theta-Net
 
     none_time = 0
     max_none_time = 30
@@ -74,18 +77,18 @@ def scalar_dom_ea_dp(init_size, toolbox, mu, lambda_, max_evaluations,
         # update Pareto-Net
         if p_model is None:
             print("Initiating Pareto-Net:")
-            p_model = toolbox.init_pareto_model(archive, p_rel_map, pareto_dominance)
+            p_model = toolbox.init_pareto_model(archive, p_rel_map, pareto_dominance, timer=timer_net)
         else:
             print("Pareto-Net is updating:")
-            toolbox.update_pareto_model(p_model, archive, p_rel_map, pareto_dominance)
+            toolbox.update_pareto_model(p_model, archive, p_rel_map, pareto_dominance, timer=timer_net)
 
         # update Theta-Net
         if s_model is None:
             print("Initiating Theta-Net:")
-            s_model = toolbox.init_scalar_model(archive, s_rel_map, scalar_dominance)
+            s_model = toolbox.init_scalar_model(archive, s_rel_map, scalar_dominance, timer=timer_net)
         else:
             print("Theta-Net is updating:")
-            toolbox.update_scalar_model(s_model, archive, s_rel_map, scalar_dominance)
+            toolbox.update_scalar_model(s_model, archive, s_rel_map, scalar_dominance, timer=timer_net)
 
         # print the objective values of representative solutions
         print("Scalar (theta) representative solutions: ")

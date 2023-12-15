@@ -16,7 +16,10 @@ from deap.tools import selNSGA2
 # The two-stage preselection procedure
 def pareto_scalar_nn_filter(offsprings, rep_individuals, nd_rep_individuals,
                             p_net, s_net, max_size, device, ref_points, counter,
-                            toolbox, visualization=False, id="", evalTimes=0):
+                            toolbox, visualization=False, id="", evalTimes=0, timer=None):
+    
+    timer.start("过滤子代：初始化")
+
     cid = counter()
     s_rep_ind = rep_individuals.get(cid)
     ps_offs, s_offs, p_offs, distinct_offs = [], [], [], []
@@ -25,6 +28,8 @@ def pareto_scalar_nn_filter(offsprings, rep_individuals, nd_rep_individuals,
 
         print("theta rep ind: ", s_rep_ind.fitness.values)
 
+        timer.next(desc="过滤子代：计算候选解")
+
         p_rep_ind = get_pareto_rep_ind(s_rep_ind, nd_rep_individuals, ref_points)
         ps_offs, s_offs, p_offs = find_candidate_individuals(p_rep_ind, s_rep_ind,
                                                              offsprings, p_net, s_net, device, max_size)
@@ -32,6 +37,8 @@ def pareto_scalar_nn_filter(offsprings, rep_individuals, nd_rep_individuals,
         print("len of ps_offs: ", len(ps_offs))
         print("len of s_offs: ", len(s_offs))
         print("len of p_offs: ", len(p_offs))
+
+        timer.next(desc="过滤子代：选择最优解")
 
         if ps_offs:
             print("Pareto and theta dominates")
@@ -47,18 +54,24 @@ def pareto_scalar_nn_filter(offsprings, rep_individuals, nd_rep_individuals,
             best_ind = None
     else:
         print("No theta rep ind")
+        timer.next(desc="过滤子代：计算候选解")
 
         rep_ind_list = list(rep_individuals.values())
         distinct_offs = find_distinct_individuals(rep_ind_list, offsprings, s_net, device, max_size)
+
+        timer.next(desc="过滤子代：选择最优解")
         if distinct_offs:
             best_ind = select_best_individual(distinct_offs, p_net, s_net, device)
         else:
             best_ind = None
 
     if visualization:
+        timer.next(desc="过滤子代：可视化")
         visualize_preselection(cid, ref_points, s_rep_ind, list(rep_individuals.values()),
                                ps_offs, s_offs, p_offs, distinct_offs,
                                best_ind, toolbox, id, evalTimes)
+    
+    timer.end()
 
     return best_ind
 
@@ -71,10 +84,14 @@ def pareto_nn_filter_2(offsprings, p_net, device):
 
 def pareto_nn_filter_3(offsprings, rep_individuals, nd_rep_individuals,
                        p_net, s_net, max_size, device, ref_points, counter,
-                       toolbox, visualization=False, id="", evalTimes=0):
+                       toolbox, visualization=False, id="", evalTimes=0, timer=None):
+    
+    timer.start("过滤子代：计算候选解")
     
     p_offs = find_candidates_2(nd_rep_individuals, offsprings, p_net, device, max_size)
     print("len of p_offs: ", len(p_offs))
+
+    timer.next(desc="过滤子代：选择最优解")
 
     if p_offs and len(p_offs) > 0:
         print("Pareto dominates")
@@ -82,6 +99,8 @@ def pareto_nn_filter_3(offsprings, rep_individuals, nd_rep_individuals,
     else:
         print("No theta or Pareto dominates")
         best_ind = None
+
+    timer.end()
 
     return best_ind
 

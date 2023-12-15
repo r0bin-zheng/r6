@@ -10,8 +10,10 @@ import numpy as np
 
 def init_dom_nn_classifier(archive, rel_map, dom, device, input_size,
                            hidden_size, num_hidden_layers, epochs, batch_size=32,
-                           activation='relu', lr=0.001, weight_decay=0.00001):
+                           activation='relu', lr=0.001, weight_decay=0.00001, timer=None):
     
+    timer.start(desc="初始化Pareto-Net：准备数据")
+
     # 准备帕累托优势关系数据
     data = prepare_dom_data(archive, rel_map, dom, data_kind='tensor', device=device)
 
@@ -28,7 +30,11 @@ def init_dom_nn_classifier(archive, rel_map, dom, device, input_size,
 
     optimizer = torch.optim.Adam(net.parameters(), lr=lr, weight_decay=weight_decay)
 
+    timer.next(desc="初始化Pareto-Net：训练")
+
     train_nn(data, load_batched_dom_data, net, criterion, optimizer, batch_size, epochs)
+
+    timer.end()
 
     return net
 

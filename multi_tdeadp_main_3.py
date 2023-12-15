@@ -94,7 +94,7 @@ class Exp:
         # alg args
         self.mu = len(self.ref_points)  # population size
         self.init_size = 11 * self.problem.n_var - 1  # the number of initial solutions
-        self.lambda_ = 1000    # the number of offsprings
+        self.lambda_ = 7000    # the number of offsprings
         self.cxpb = 1.0       # crossover probability
         self.mutpb = 1.0      # mutation probability
         self.dic = 30                    # distribution index for crossover

@@ -20,23 +20,23 @@ start_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 # strategies = [2, 3, 4]
 # max_fes = [250]
 
-# problems = ['dtlz7']
-# n_objs = [3]
-# n_vars = [3]
-# algs = [4]
-# phase_lists = [0]
-# rates = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
-# strategies = [2]
-# max_fes = [250]
-
 problems = ['dtlz7']
 n_objs = [3]
 n_vars = [3]
 algs = [4]
-phase_lists = [0]
-rates = [0.5]
-strategies = [2]
-max_fes = [250]
+phase_lists = [0, 1]
+rates = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+strategies = [4]
+max_fes = [300]
+
+# problems = ['dtlz7']
+# n_objs = [3]
+# n_vars = [3]
+# algs = [4]
+# phase_lists = [1]
+# rates = [0.5]
+# strategies = [2]
+# max_fes = [300]
 
 # 创建exp和log文件夹
 os.makedirs("./exp", exist_ok=True)

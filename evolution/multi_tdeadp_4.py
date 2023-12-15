@@ -14,6 +14,8 @@ def scalar_dom_ea_dp(init_size, toolbox, mu, lambda_, max_evaluations,
     
     # 初始化计时器
     timer = Timer()
+    timer_filter = Timer()
+    timer_net = Timer()
     timer.start(desc="评估初始样本")
     
     # 初始化种群
@@ -54,12 +56,12 @@ def scalar_dom_ea_dp(init_size, toolbox, mu, lambda_, max_evaluations,
     timer.next(desc="初始化Pareto-Net")
 
     print("Initiating Pareto-Net:")
-    p_model = toolbox.init_pareto_model(archive, p_rel_map, epsilon_dominance)  # init Pareto-Net
+    p_model = toolbox.init_pareto_model(archive, p_rel_map, epsilon_dominance, timer=timer_net)  # init Pareto-Net
 
     timer.next(desc="初始化Theta-Net")
 
     print("Initiating Theta-Net:")
-    s_model = toolbox.init_scalar_model(archive, s_rel_map, scalar_dominance)  # init Theta-Net
+    s_model = toolbox.init_scalar_model(archive, s_rel_map, scalar_dominance, timer=timer_net)  # init Theta-Net
 
     # print("p_rel_map", p_rel_map)
     # print("s_rel_map", s_rel_map)
@@ -91,9 +93,11 @@ def scalar_dom_ea_dp(init_size, toolbox, mu, lambda_, max_evaluations,
 
         if global_flag:
             # use two-stage preselection to select a solution for function evaluation
-            individual = toolbox.filter(offsprings, rep_individuals, nd_rep_individuals, p_model, s_model, category_size, evalTimes=evaluations)      
+            individual = toolbox.filter(offsprings, rep_individuals, nd_rep_individuals,
+                                        p_model, s_model, category_size, evalTimes=evaluations, timer=timer_filter)      
         else:
-            individual = toolbox.filter_parato(offsprings, rep_individuals, nd_rep_individuals, p_model, s_model, category_size, evalTimes=evaluations)   
+            individual = toolbox.filter_parato(offsprings, rep_individuals, nd_rep_individuals,
+                                               p_model, s_model, category_size, evalTimes=evaluations, timer=timer_filter)   
 
 
 
@@ -128,20 +132,20 @@ def scalar_dom_ea_dp(init_size, toolbox, mu, lambda_, max_evaluations,
         # update Pareto-Net
         if p_model is None:
             print("Initiating Pareto-Net:")
-            p_model = toolbox.init_pareto_model(archive, p_rel_map, epsilon_dominance)
+            p_model = toolbox.init_pareto_model(archive, p_rel_map, epsilon_dominance, timer=timer_net)
         else:
             print("Pareto-Net is updating:")
-            toolbox.update_pareto_model(p_model, archive, p_rel_map, epsilon_dominance)
+            toolbox.update_pareto_model(p_model, archive, p_rel_map, epsilon_dominance, timer=timer_net)
 
         timer.next(desc="更新Theta-Net")
 
         # update Theta-Net
         if s_model is None:
             print("Initiating Theta-Net:")
-            s_model = toolbox.init_scalar_model(archive, s_rel_map, scalar_dominance)
+            s_model = toolbox.init_scalar_model(archive, s_rel_map, scalar_dominance, timer=timer_net)
         else:
             print("Theta-Net is updating:")
-            toolbox.update_scalar_model(s_model, archive, s_rel_map, scalar_dominance)
+            toolbox.update_scalar_model(s_model, archive, s_rel_map, scalar_dominance, timer=timer_net)
 
         timer.next(desc="计算IGD")
 
@@ -160,5 +164,7 @@ def scalar_dom_ea_dp(init_size, toolbox, mu, lambda_, max_evaluations,
 
     timer.end()
     timer.print_map()
+    timer_filter.print_map()
+    timer_net.print_map()
     
     return archive, archive_data, success
